@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react'
+
+import overallBear from './bears/overallBear.png';
+import redBear from './bears/redBear.png';
+import swimBear from './bears/swimBear.png';
+import vestBear from './bears/vestBear.png';
+
 import './App.css';
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h3>Brave Bear</h3>
       </header>
+        <body>
+          <p>
+              <span>
+                <img src={redBear} className="App-bears" alt="Red Bear"/>
+              </span>
+
+              <span>
+                <img src={swimBear} className="App-bears" alt="Swim Bear"/>
+              </span>
+
+              <span>
+                <img src={overallBear} className="App-bears" alt="Overalls Bear"/>
+              </span>
+
+              <span>
+                <img src={vestBear} className="App-bears" alt="Vest Bear"/>
+              </span>
+            </p>
+          </body>
     </div>
   );
-}
 
 export default App;
