@@ -6,33 +6,6 @@ html, body {
   padding: 0;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'main main main main main right'
-    'main main main main main right'
-    'main main main main main right'
-    'main main main main main right'
-    'main main main main main right'
-    'footer footer footer footer footer footer';
-  grid-gap: 5px;
-  background-color: rgb(255, 255, 255);
-  height: 100%;
-}
-
-.grid-container > div {
-  background-color: salmon; 
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 30px;
-}
-
-.item1 { grid-area: header; }
-.item2 { grid-area: main; }
-.item3 { grid-area: right; }
-.item4 { grid-area: footer; }
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -55,10 +28,63 @@ li a {
   text-decoration: none;
 }
 
-/* 
-@media (max-width: 400px) {
-  li a {
-    font-size: 20px;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main right'
+    'main main main main main right'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+  .grid-container > div {
+    background-color: salmon; 
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 30px;
   }
-} 
-*/
+
+    .item1 { grid-area: header; }
+    .item2 { display: grid; grid-area: main; }
+    .item3 { grid-area: right; }
+    .item4 { grid-area: footer; }
+
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(4rem, auto);
+    grid-gap: 2em;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+    .box {
+      display: grid;
+      grid-auto-rows: minmax(2em, auto);
+      border: 2px solid #fff;
+      background-color: #fff;
+      box-shadow: 0 3px rgba(155, 155, 155, 0.5);
+      height: 10vw;
+      width: 15rem;
+      font-size: 14px;
+      line-height: 1em;
+      margin: 5px;
+      justify-content: center;
+    }
+
+.icons {
+  justify-content: center;
+  transform: scale(0.15);
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+@media (min-width: 1300px) {
+.icons {
+  transform: scale(0.2);
+}
+}

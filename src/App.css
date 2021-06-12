@@ -3,7 +3,7 @@
   display: grid;
 }
 
-.App-bears {
+.bear {
   height: 20vmax;
   pointer-events: none;
   padding: 0 1rem;
@@ -11,8 +11,8 @@
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
-  .App-bears {
-    animation: App-bears-spin infinite 20s linear;
+  .bear {
+    animation: bear-spin infinite 20s linear;
   }
 } */
 
@@ -29,7 +29,7 @@
 
 /* 
 
-@keyframes App-bears-spin {
+@keyframes bear-spin {
   from {
     transform: rotate(0deg);
   }
