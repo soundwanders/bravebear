@@ -22,20 +22,23 @@ li {
 li a {
   display: block;
   color: black;
-  font-family: Helvetica, sans-serif;
+  font-family: mono, Helvetica, sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 10px;
 }
 
 .grid-container {
   display: grid;
+
   grid-template-areas:
     'header header header header header header'
-    'main main main main main right'
-    'main main main main main right'
+    'left main main main main main'
+    'left main main main main main'
     'footer footer footer footer footer footer';
-  grid-gap: 5px;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-gap: 3px;
   background-color: rgb(255, 255, 255);
   height: 100%;
 }
@@ -43,48 +46,151 @@ li a {
   .grid-container > div {
     background-color: salmon; 
     text-align: center;
-    padding: 1rem 0;
-    font-size: 30px;
+    padding: 1rem;
   }
-
     .item1 { grid-area: header; }
     .item2 { display: grid; grid-area: main; }
-    .item3 { grid-area: right; }
+    .item3 { grid-area: left; }
     .item4 { grid-area: footer; }
 
-
+.rb {
+  opacity: 90%;
+  height: 5rem;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+    
   .content-container {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-rows: minmax(4rem, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(5rem, auto);
     grid-gap: 2em;
     margin: 0 auto;
     align-content: center;
   }
 
-    .box {
-      display: grid;
-      grid-auto-rows: minmax(2em, auto);
-      border: 2px solid #fff;
-      background-color: #fff;
-      box-shadow: 0 3px rgba(155, 155, 155, 0.5);
-      height: 10vw;
-      width: 15rem;
-      font-size: 14px;
-      line-height: 1em;
-      margin: 5px;
-      justify-content: center;
+    .content-title {
+      display: block;
+      max-height: 0;
+      font-family: mono, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 1.5em;
+      margin: 0 auto;
+      padding: 0;
+      margin-bottom: 1rem;
+      max-height: 0;
+      font-display: swap;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-.icons {
-  justify-content: center;
-  transform: scale(0.15);
-  align-items: center;
-  margin-bottom: 8em;
+      .box {
+        display: grid;
+        grid-auto-rows: minmax(2em, auto);
+        border: 2px solid #fff;
+        background-color: #fff;
+        box-shadow: 0 3px rgba(155, 155, 155, 0.5);
+        height: 7rem;
+        width: 7rem;
+        font-size: 9px;
+        font-display: swap;
+        line-height: 9px;
+        margin: 5px;
+        justify-content: center;
+        font-family: mono, Helvetica, sans-serif;
+
+      }
+
+        .icons {
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 8em;
+          transform: scale(0.2);
+        }
+
+img {
+  height: 20rem;
+  width: auto;
 }
 
-@media (min-width: 1300px) {
-.icons {
-  transform: scale(0.2);
-}
+
+
+
+
+@media (min-width: 770px) {
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+    
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: black;
+    font-family: mono, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'left main main main main main left'
+      'left main main main main main left'
+      'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  }
+  
+    .grid-container > div {
+      background-color: salmon; 
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 30px;
+    }
+  
+      .item1 { grid-area: hrid- eader; }
+      .item2 { display: gririd- d; grid-area: main; }
+      .item3 { grid-area: left; }
+      .item4 { grid-area: footer; }
+  
+  
+    .content-container {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-auto-rows: minmax(4rem, auto);
+      grid-gap: 2em;
+      margin: 0 auto;
+      align-content: center;
+    }
+  
+      .box {
+        display: grid;
+        grid-auto-rows: minmax(2em, auto);
+        border: 2px solid #fff;
+        background-color: #fff;
+        box-shadow: 0 3px rgba(155, 155, 155, 0.5);
+        height: 12rem;
+        width: 15rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 5px;
+        justify-content: center;
+      }
+  
+  .icons {
+    margin-bottom: 5em;
+    transform: scale(0.3);
+    line-height: 2em;
+  }
 }
