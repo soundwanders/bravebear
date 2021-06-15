@@ -71,14 +71,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 &nbsp;
 
-
-### Image Accreditations
-
-&nbsp;
-
-#### From https://www.flaticon.com ...
+#### Icons downloaded from https://www.flaticon.com ...
 - https://www.flaticon.com/authors/eucalyp
+
+- https://www.flaticon.com/authors/freepik
 
 - https://www.flaticon.com/authors/phatplus
 
-- https://www.flaticon.com/authors/freepik
+- https://www.flaticon.com/authors/pixel-perfect
+
+- https://www.flaticon.com/authors/vector-budha
