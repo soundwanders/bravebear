@@ -3,7 +3,7 @@ import React from 'react'
 import overallBear from './media/bears/overallBear.png';
 import redBear from './media/bears/redBear.png';
 import swimBear from './media/bears/swimBear.png';
-import vestBear from './media/bears/vestBear.png';
+import blueBear from './media/bears/blueBear.png';
 
 import './App.css';
 
@@ -19,7 +19,7 @@ const App = () => (
             </span>
 
             <span>
-              <img src={vestBear} className="bear vest" alt="Vest Bear"/>
+              <img src={blueBear} className="bear blue" alt="Blue Bear"/>
             </span>
 
             <span>
