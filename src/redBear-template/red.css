@@ -27,6 +27,9 @@ li.link a {
   padding: 0.875rem 1rem;
   text-decoration: none;
   font-size: 0.65rem;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -43,7 +46,7 @@ li.link a {
     'left main main main main main'
     'footer footer footer footer footer footer';
   grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
-  grid-gap: 1px;
+  grid-gap: 0;
   background-color: rgb(255, 255, 255);
   height: 100%;
   width: auto;
@@ -54,10 +57,10 @@ li.link a {
     text-align: center;
     padding-bottom: 0;
   }
-    .item1 { grid-area: header; padding: 0; }
+    .item1 { grid-area: header; }
     .item2 { grid-area: main; }
-    .item3 { grid-area: left; }
-    .item4 { grid-area: footer; margin-bottom: 1rem; }
+    .item3 { grid-area: left; min-width: 2.5rem; }
+    .item4 { grid-area: footer; margin-bottom:1rem; }
 
 .bear-logo {
   opacity: 90%;
@@ -79,52 +82,61 @@ li.link a {
   margin: 1rem 2rem;
   align-content: center;
   justify-content: center;
+  transform: translateX(-1.5rem);
 }
 
   .content-title {
     display: grid;
     color: #fff;
     font-family: mono, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-    margin: 0 auto;
-    padding: 0;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     font-display: swap;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+    transform: translateX(-1.5rem);
   }
 
     .box {
       display: grid;
-      border: 0.125rem solid #fff;
       background-color: #fff;
-      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
       height: 7rem;
-      width: 7rem;
-      font-size: 0.625rem;
+      width: 7.25rem;
+      border: 0.125rem solid #fff;
+      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      font-size: 0.65rem;
       line-height: 0.625rem;
       font-display: swap;
+      text-align: center;
       margin: 0 auto;
-      justify-content: center;
       font-family: mono, Helvetica, sans-serif;
     }
 
       .icons {
-        align-items: center;
         margin: 0 auto;
         margin-bottom: 0.75rem;
         height: 4rem;
         width: auto;
+        opacity: 90%;
       }
 
 .polar {
   display: grid;
-  height: 5rem;
+  height: 4rem;
   padding: 0;
   margin: 0 auto;
-  transform: translateY(14rem);
-  margin-left: -0.5rem;
+  transform: translateY(16rem);
+  animation: peekaboo 4000ms forwards ease-in;
 }
+
+  @keyframes peekaboo {
+    0% { margin-left: -5rem; }
+    100% { margin-left: -0.3rem; }
+  }
 
 .footer-logo {
   display: inline-grid;
@@ -148,163 +160,31 @@ li.link a {
     font-size: 1.675rem;
     margin-bottom: 1.675rem;
   }
+  .polar {
+    transform: translateY(20rem);
+  }
 }
 
 
-@media only screen and (max-height: 640px) {
+@media only screen and (max-height: 668px) {
   .box {
     height: 5.5rem;
     transform: translateY(-1rem);
   }
   .footer-logo {
-    margin-top: -0.75rem;
+    translate: 0 -0.5em;
   }
   .icons {
     height: 3rem;
+  }
+
+  .polar {
+    transform: translateY(13rem);
   }
 }
 
 /*
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
-
-
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #fff;
-  word-wrap: none;
-}
-  
-li.link {
-  float: left;
-}
-
-li.link a {
-  display: block;
-  color: black;
-  font-family: mono, Helvetica, sans-serif;
-  text-align: center;
-  padding: 0.875rem 1rem;
-  text-decoration: none;
-  font-size: 0.65rem;
-}
-
-.wrapper {
-  display: grid;
-  height: 98%;
-  width: 100%;
-}
-
-.grid-container {
-  display: inline-grid;
-  grid-template-areas:
-    'header header header header header header'
-    'left main main main main main'
-    'left main main main main main'
-    'footer footer footer footer footer footer';
-  grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
-  grid-gap: 0.1875rem;
-  background-color: rgb(255, 255, 255);
-  height: 100%;
-  width: auto;
-}
-
-  .grid-container > div {
-    background-color: salmon; 
-    text-align: center;
-    padding-bottom: 0;
-  }
-    .item1 { grid-area: header; padding: 0; }
-    .item2 { grid-area: main; }
-    .item3 { grid-area: left; }
-    .item4 { grid-area: footer; margin-bottom: 1rem; }
-
-.bear-logo {
-  opacity: 90%;
-  height: 4.5rem;
-  width: auto;
-  margin: 0 1rem;
-  padding-top: 0.25rem;
-}
-
-#rb {
-  height: 4.75rem;
-}
-
-.content-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(2rem, auto);
-  grid-gap: 2em;
-  margin: 1rem auto;
-  align-content: center;
-  justify-content: center;
-}
-
-  .content-title {
-    display: grid;
-    color: #fff;
-    font-family: mono, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-    margin: 0 auto;
-    padding: 0;
-    font-display: swap;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-    .box {
-      display: grid;
-      border: 0.125rem solid #fff;
-      background-color: #fff;
-      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-      height: 7rem;
-      width: 7rem;
-      font-size: 0.625rem;
-      line-height: 0.625rem;
-      font-display: swap;
-      margin: 0 auto;
-      justify-content: center;
-      font-family: mono, Helvetica, sans-serif;
-    }
-
-      .icons {
-        align-items: center;
-        margin: 0 auto;
-        margin-bottom: 0.75rem;
-        height: 4rem;
-        width: auto;
-      }
-
-.polar {
-  display: grid;
-  height: 5rem;
-  padding: 0;
-  margin: 0 auto;
-  transform: translateY(14rem);
-  margin-left: -0.5rem;
-}
-
-.footer-logo {
-  display: inline-grid;
-  position: relative;
-  padding: 0 0.33rem;
-  margin: 0 auto;
-  margin-top: -0.33rem;
-  height: 1.75rem;
-  opacity: 90%;
-}
 
 */
