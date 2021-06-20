@@ -59,8 +59,10 @@ li.link a {
   }
     .item1 { grid-area: header; }
     .item2 { grid-area: main; }
+    /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
+    /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
     .item3 { grid-area: left; min-width: 2.5rem; }
-    .item4 { grid-area: footer; margin-bottom:1rem; }
+    .item4 { grid-area: footer; margin-bottom: 1rem; }
 
 .bear-logo {
   opacity: 90%;
@@ -95,7 +97,7 @@ li.link a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
-    transform: translateX(-1.5rem);
+    transform: translate(-1.5rem, -0.75rem);
   }
 
     .box {
@@ -114,6 +116,7 @@ li.link a {
       text-align: center;
       margin: 0 auto;
       font-family: mono, Helvetica, sans-serif;
+      transform: translateY(-0.75rem);
     }
 
       .icons {
@@ -126,16 +129,16 @@ li.link a {
 
 .polar {
   display: grid;
-  height: 4rem;
+  height: 5rem;
   padding: 0;
   margin: 0 auto;
-  transform: translateY(16rem);
+  transform: translateY(15rem);
   animation: peekaboo 4000ms forwards ease-in;
 }
 
   @keyframes peekaboo {
     0% { margin-left: -5rem; }
-    100% { margin-left: -0.3rem; }
+    100% { margin-left: -0.45rem; }
   }
 
 .footer-logo {
@@ -150,7 +153,7 @@ li.link a {
 
 
 
-/* Most modern large phones, like the iPhone XR/XS */
+/* Larger phones, like the iPhone XR/XS */
 @media only screen and (min-height: 896px) {
   .box {
     margin: 1rem auto;
@@ -222,13 +225,13 @@ li.link a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(5rem, auto);
-    transform: translateX(-10rem);
+    transform: translate(-10rem, -2rem);
   }
   
     .content-title {
       font-size: 2.5rem;
       line-height: 2.5rem;
-      transform: translateX(-10rem);
+      transform: translate(-10rem, -2rem);
     }
   
       .box {
@@ -252,13 +255,13 @@ li.link a {
   }
   
     @keyframes peekaboo {
-      0% { margin-left: -6rem; }
+      0% { margin-left: -5.5rem; }
       100% { margin-left: -0.75rem; }
     }
   
   .footer-logo {
     padding: 0 0.5rem;
     transform:translateX(-0.75rem);
-    margin-bottom: -1rem;
+    margin-bottom: 0;
   }
 }
