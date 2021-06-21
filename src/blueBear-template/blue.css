@@ -75,7 +75,8 @@ html, body {
 
     #bunchabears {
         background-color: peachpuff;
-        margin-top: 1rem;
+        transform: translateY(-1rem);
+        padding: 1rem;
     }
         
         #rb {
@@ -90,7 +91,7 @@ html, body {
     margin: 1rem 2rem;
     align-content: center;
     justify-content: center;
-    transform: translateX(-1.5rem);
+    transform: translate(-1.5rem, -1rem);
   }
   
     .content-title {
@@ -103,7 +104,7 @@ html, body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       margin: 0 auto;
-      transform: translate(-2rem, -1rem);
+      transform: translate(-2rem, -1.5rem);
     }
   
       .box {
@@ -149,17 +150,39 @@ html, body {
   .footer-logo {
     display: inline-grid;
     position: relative;
-    padding: 0 0.33rem;
-    margin: 0 auto;
-    margin-top: -0.33rem;
+    margin: 0 0.33rem;
     height: 1.75rem;
+    transform: translateY(-1.5rem);
     opacity: 90%;
   }
   
+  /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
+  @media only screen and (max-height: 668px) {
+    .content-container {
+      margin-bottom: 1rem;
+    }
+    .box {
+      height: 5.5rem;
+      transform: translateY(-1rem);
+    }
+    .footer-logo {
+      transform: translateY(-2.5rem);
+      height: 1.25rem;
+    }
+    .icons {
+      height: 3rem;
+    }
   
-  
+    .polar {
+      transform: translateY(13rem);
+    }
+  }
+
   /* Larger phones, like the iPhone XR/XS */
   @media only screen and (min-height: 896px) {
+    .content-title {
+      transform: translate(-2rem, -1rem);
+    }
     .box {
       margin: 1rem auto;
     }
@@ -175,31 +198,11 @@ html, body {
     }
   }
   
-  
-  /* Samsung and Google phones, smaller screens like the Note 3 and Google Pixel 2 */
-  @media only screen and (max-height: 668px) {
-    .box {
-      height: 5.5rem;
-      transform: translateY(-1rem);
-    }
-    .footer-logo {
-      translate: 0 -0.5em;
-    }
-    .icons {
-      height: 3rem;
-    }
-  
-    .polar {
-      transform: translateY(13rem);
-    }
-  }
-  
   /*
-
   //////////////////////////////////////////////////////////////////////////////////////
   */
   
-  /* Media query for PC/LAPTOPS */
+  /* Desktop and laptop stylesheet */
   @media (min-width: 1028px) {
   
     li.link a {
