@@ -3,7 +3,7 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 
 // import brownBearImage from './media/bears/brownBear.png';
 // import redBearImage from './media/bears/redBear.png';
-import './blueBear-template/blue.css'
+import './blue.css'
 
 class BlueBearTemplate extends React.Component {
   render() {
@@ -98,7 +98,6 @@ class BlueBearTemplate extends React.Component {
           </div>
 
         </main>
-
       </Router>
     )
   }
