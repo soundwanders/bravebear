@@ -18,9 +18,14 @@ import Github from './media/icons/github-bluebear.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
-import styles from './Blue.module.css'
+import styles from './Blue.module.css';
+
 
 class BlueBearTemplate extends React.Component {
+  nextPath(path) { 
+    this.props.history.push(path);
+  }
+
   render() {
     return (
       <Router>
@@ -28,10 +33,21 @@ class BlueBearTemplate extends React.Component {
           <nav>
             <div className={styles.navbar}>
               <ul>
-                <li className={styles.link-1}><Link to="/">Home</Link></li>
-                <li className={styles.link-2}><Link to="bluebear">Blue Bear</Link></li>
-                <li className={styles.link-3}><Link to="brownbear">Brown Bear</Link></li>
-                <li className={styles.link-4}><Link to="redbear">Red Bear</Link></li>
+                <li className={styles.links}>
+                  <Link onClick={() => this.nextPath("/")} to="/">Home</Link>
+                </li>
+                
+                <li className={styles.links}>
+                  <Link onClick={() => this.nextPath("/bluebear")} to="/bluebear">Blue Bear</Link>
+                </li>
+
+                <li className={styles.links}>
+                  <Link onClick={() => this.nextPath("/brownbear")} to="/brownbear">Brown Bear</Link>
+                </li>
+
+                <li className={styles.links}>
+                  <Link onClick={() => this.nextPath("/redbear")} to="/redbear">Red Bear</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -41,54 +57,53 @@ class BlueBearTemplate extends React.Component {
           <div className={styles.wrapper}>
             <div className={styles.gridContainer}>
               <div className={styles.item1}>
-                <span className={styles.bunchabears}>
+                <p className={styles.bunchabears}>
                   <img className={styles.bearLogo} id="rb" src={ RedBearImage } alt="A Brave Red Bear"/>
                   <img className={styles.bearLogo} src={ BrownBearImage } alt="A Brave Brown Bear"/>
                   <img className={styles.bearLogo} src={ BlueBearImage} alt="A Brave Blue Bear"/>
-                </span>
+                </p>
               </div>
-
 
               <div className={styles.item2}>
                 <div className={styles.contentTitle}><h3>Brave Bear Blue</h3></div>
 
                 <div className={styles.contentContainer}>
-                    <div className={styles.box1}>
+                    <div className={styles.box}>
                       <p>App Development</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ AppDev } alt="Application Development"/>
                         </div>
                     </div>
 
-                    <div className={styles.box2}>
+                    <div className={styles.box}>
                       <p>Cloud Storage</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ Cloud } alt="Cloud Storage"/>
                         </div>
                     </div>
 
-                    <div className={styles.box3}>
+                    <div className={styles.box}>
                       <p>CMS Software</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ CMS } alt="CMS Software"/>
                         </div>
                     </div>
 
-                    <div className={styles.box4}>
+                    <div className={styles.box}>
                       <p>E-Commerce</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ ECommerce } alt="E-Commerce Builds"/>
                         </div>
                     </div>
 
-                    <div className={styles.box5}>
+                    <div className={styles.box}>
                       <p>Server Hosting</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ Database } alt="Server Hosting"/>
                         </div>
                     </div>
 
-                    <div className={styles.box6}>
+                    <div className={styles.box}>
                       <p>Site Maintenance</p>
                         <div className={styles.iconContainer}>
                           <img className={styles.icons} src={ Maintenance } alt="Site Maintenance"/>

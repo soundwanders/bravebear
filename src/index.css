@@ -18,10 +18,45 @@ code {
 }
 
 .bear {
-  height: 20vmax;
+  height: 10vmax;
   pointer-events: none;
   padding: 0 1rem;
   margin-top: 2rem;
+}
+
+button {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 0.25rem;
+}
+
+li.links {
+  float: left;
+}
+
+li.links a {
+  display: block;
+  color: black;
+  font-family: mono, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li.links.blue {
+  color: blue;
+}
+
+.links.brown {
+  color: sandybrown;
+}
+
+.links.red {
+  color: salmon;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

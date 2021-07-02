@@ -14,12 +14,12 @@ ul {
   background-color: #fff;
   word-wrap: none;
 }
-  
-li.link {
+
+li.links {
   float: left;
 }
 
-li.link a {
+li.links a {
   display: block;
   color: black;
   font-family: mono, Helvetica, sans-serif;
@@ -34,7 +34,7 @@ li.link a {
 
 .wrapper {
   display: grid;
-  height: 98%;
+  height: 99%;
   width: 100%;
 }
 
@@ -197,7 +197,7 @@ li.link a {
 /* MEDIA QUERY FOR PC/LAPTOP (LARGE SCREENS) */
 @media (min-width: 1028px) {
 
-  li.link a {
+  li.links a {
     font-size: 1rem;
     margin-left: 1rem;
   }
@@ -243,6 +243,7 @@ li.link a {
         -moz-box-shadow: 0 0.25rem rgba(100, 100, 100, 0.2);
         font-size: 1rem;
         line-height: 1rem;
+        user-select: none;
       }
   
         .icons {
@@ -251,7 +252,7 @@ li.link a {
   
   .polar {
     height: 10rem;
-    transform: translateY(13rem);
+    transform: translateY(10rem);
   }
   
     @keyframes peekaboo {

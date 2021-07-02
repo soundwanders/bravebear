@@ -8,7 +8,7 @@ import './index.css';
 
 
 class App extends React.Component {
-  
+
   nextPath(path) { 
     this.props.history.push(path);
   }
@@ -18,26 +18,39 @@ class App extends React.Component {
       <Router>
         <main>
           <header>
-              <nav>
-                <div id="navbar">
-                  <ul>
-                    <li className="link 1"><Link to="/">Home</Link></li>
-                    <li className="link 2"><Link to="/bluebear">Blue Bear</Link></li>
-                    <li className="link 3"><Link to="/brownbear">Brown Bear</Link></li>
-                    <li className="link 4"><Link to="/redbear">Red Bear</Link></li>
-                  </ul>
-                  </div>
-              </nav>
-            </header>
+            <nav>
+              <div id="navbar">
+                <ul>
+                  <li className="links">
+                    <Link onClick={() => this.nextPath("/")} to="/">Home</Link>
+                  </li>
+
+                  <li className="links blue">
+                    <Link onClick={() => this.nextPath("/bluebear")} to="/bluebear">Blue Bear</Link>
+                  </li>
+
+                  <li className="links brown">
+                    <Link onClick={() => this.nextPath("/bluebear")} to="/brownbear">Brown Bear</Link>
+                  </li>
+
+                  <li className="links red">
+                    <Link onClick={() => this.nextPath("/bluebear")} to="/redbear">Red Bear</Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
 
           <div className="App">
-            <button onClick={() => this.nextPath("/bluebear")}>
-                  <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
-            </button>
+            <p>
+              <button onClick={() => this.nextPath("/bluebear")}>
+                    <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
+              </button>
 
-            <button onClick={() => this.nextPath("/redbear")}>
-                  <img src={ RedBearImage } className="bear red" alt="A Brave Red Bear"/>
-            </button>
+              <button onClick={() => this.nextPath("/redbear")}>
+                    <img src={ RedBearImage } className="bear red" alt="A Brave Red Bear"/>
+              </button>
+            </p>
           </div>
         </main>
       </Router>
