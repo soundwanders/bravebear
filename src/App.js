@@ -3,12 +3,12 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 
 // import BrownBearImage from './media/bears/brownBear.png';
 import BlueBearImage from './components/media/bears/blueBear.png';
+import BrownBearImage from './components/media/bears/brownBear.png';
 import RedBearImage from './components/media/bears/redBear.png';
 import './index.css';
 
 
 class App extends React.Component {
-
   nextPath(path) { 
     this.props.history.push(path);
   }
@@ -30,11 +30,11 @@ class App extends React.Component {
                   </li>
 
                   <li className="links brown">
-                    <Link onClick={() => this.nextPath("/bluebear")} to="/brownbear">Brown Bear</Link>
+                    <Link onClick={() => this.nextPath("/brownbear")} to="/brownbear">Brown Bear</Link>
                   </li>
 
                   <li className="links red">
-                    <Link onClick={() => this.nextPath("/bluebear")} to="/redbear">Red Bear</Link>
+                    <Link onClick={() => this.nextPath("/redbear")} to="/redbear">Red Bear</Link>
                   </li>
                 </ul>
               </div>
@@ -45,6 +45,10 @@ class App extends React.Component {
             <p>
               <button onClick={() => this.nextPath("/bluebear")}>
                     <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
+              </button>
+
+              <button onClick={() => this.nextPath("/brownbear")}>
+                    <img src={ BrownBearImage } className="bear brown" alt="A Brave Brown Bear"/>
               </button>
 
               <button onClick={() => this.nextPath("/redbear")}>

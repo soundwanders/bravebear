@@ -4,7 +4,7 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 import BlueBearImage from './media/bears/blueBear.png'
 import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
-import PeekingBear from './media/bears/polar-beige.png';
+import PeekingBear from './media/bears/polar-blue.png';
 
 import AppDev from './media/icons/appDev.svg';
 import Cloud from './media/icons/cloud.svg';
@@ -18,10 +18,10 @@ import Github from './media/icons/github-bluebear.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
-import styles from './Blue.module.css';
+import styles from './Brown.module.css';
 
 
-class BlueBearTemplate extends React.Component {
+class BrownBearTemplate extends React.Component {
   nextPath(path) { 
     this.props.history.push(path);
   }
@@ -65,7 +65,7 @@ class BlueBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item2}>
-                <div className={styles.contentTitle}><h3>Brave Bear Blue</h3></div>
+                <div className={styles.contentTitle}><h3>Brave Bear Brown</h3></div>
 
                 <div className={styles.contentContainer}>
                     <div className={styles.box}>
@@ -133,4 +133,4 @@ class BlueBearTemplate extends React.Component {
   }
 };
 
-export default withRouter(BlueBearTemplate);
+export default withRouter(BrownBearTemplate);

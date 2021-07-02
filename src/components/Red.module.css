@@ -133,7 +133,7 @@ li.links a {
   padding: 0;
   margin: 0 auto;
   transform: translateY(15rem);
-  animation: peekaboo 4000ms forwards ease-in;
+  animation: peekaboo 3000ms forwards ease-in;
 }
 
   @keyframes peekaboo {
