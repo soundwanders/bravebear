@@ -6,17 +6,17 @@ import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
 import PeekingBear from './media/bears/polar-beige.png';
 
-import AppDev from './media/icons/appDev.svg';
-import Cloud from './media/icons/cloud.svg';
-import CMS from './media/icons/cms.svg';
-import Database from './media/icons/database.svg';
-import Maintenance from './media/icons/maintenance.svg';
-import ECommerce from './media/icons/ecommerce.svg';
+import AppDev from './media/icons/png/appDev.png';
+import Cloud from './media/icons/png/cloud.png';
+import CMS from './media/icons/png/cms.png';
+import Database from './media/icons/png/database.png';
+import Maintenance from './media/icons/png/maintenance.png';
+import ECommerce from './media/icons/png/ecommerce.png';
 
-import Facebook from './media/icons/facebook.svg';
-import Github from './media/icons/github-bluebear.svg';
-import Instagram from './media/icons/instagram.svg';
-import StackOverflow from './media/icons/stack-overflow.svg';
+import Facebook from './media/icons/png/facebook.png';
+import Github from './media/icons/png/github-bluebear.png';
+import Instagram from './media/icons/png/instagram.png';
+import StackOverflow from './media/icons/png/stack-overflow.png';
 
 import styles from './Blue.module.css';
 
