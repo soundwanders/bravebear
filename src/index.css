@@ -17,8 +17,9 @@ code {
   display: grid;
 }
 
+
 .brave {
-  font-size: 12rem;
+  font-size: 3rem;
   font-family: monospace;
   color: #fff;
   padding: 0;
@@ -60,20 +61,10 @@ li.links a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .bear {
-    animation: bear-spin infinite 20s linear;
+
+/* Desktop and laptop stylesheet */
+@media (min-width: 1028px) {
+  .brave {
+    font-size: 12rem;
   }
-} */
-
-.App-header {
-  background-color: #282c34;
-  min-height: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(2px + 2vmin);
-  color: white;
 }
-
