@@ -113,7 +113,7 @@ class BrownBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item3}>
-                <img className={styles.polar} src={ PeekingBear } alt="Peeking Polar Bear"/>
+                <img className={styles.polar} src={ PeekingBear } alt="Peekaboo Bear"/>
               </div>
 
               <div className={styles.item4}>

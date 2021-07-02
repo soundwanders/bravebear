@@ -4,7 +4,7 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 import BlueBearImage from './media/bears/blueBear.png'
 import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
-import PeekingBear from './media/bears/polar-yellow.png';
+import PeekingBear from './media/bears/polar-green.png';
 
 import AppDev from './media/icons/appDev.svg';
 import Cloud from './media/icons/cloud.svg';
@@ -111,7 +111,7 @@ class BlueBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item3}>
-                <img className={styles.polar} src={ PeekingBear } alt="Peeking Polar Bear"/>
+                <img className={styles.polar} src={ PeekingBear } alt="Peekaboo Bear"/>
               </div>
 
               <div className={styles.item4}>
