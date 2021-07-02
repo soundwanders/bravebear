@@ -13,8 +13,9 @@ ul {
   overflow: hidden;
   background-color: #fff;
   word-wrap: none;
+  box-shadow: 2px rgba(212, 121, 121, 0.2);
 }
-
+  
 li.links {
   float: left;
 }
@@ -47,22 +48,23 @@ li.links a {
     'footer footer footer footer footer footer';
   grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
   grid-gap: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: salmon;
   height: 100%;
   width: auto;
 }
 
   .gridContainer > div {
-    background-color: salmon; 
+    background-color: salmon;
     text-align: center;
     padding-bottom: 0;
   }
+  
     .item1 { grid-area: header; }
     .item2 { grid-area: main; }
     /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
     /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
     .item3 { grid-area: left; min-width: 2.5rem; }
-    .item4 { grid-area: footer; margin-bottom: 1rem; }
+    .item4 { grid-area: footer; margin-bottom:1rem; }
 
 .bearLogo {
   opacity: 90%;
@@ -72,9 +74,15 @@ li.links a {
   padding-top: 0.25rem;
 }
 
-.rb {
-  height: 4.75rem;
-}
+  .bunchabears {
+      background-color: #ffe089;
+      transform: translateY(-1rem);
+      padding: 1rem 0;
+  }
+      
+    #rb {
+      height: 4.75rem;
+    }
 
 .contentContainer {
   display: grid;
@@ -84,7 +92,7 @@ li.links a {
   margin: 1rem 2rem;
   align-content: center;
   justify-content: center;
-  transform: translateX(-1.5rem);
+  transform: translate(-1.5rem, -1rem);
 }
 
   .contentTitle {
@@ -97,7 +105,7 @@ li.links a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
-    transform: translate(-1.5rem, -0.75rem);
+    transform: translate(-2rem, -1.5rem);
   }
 
     .box {
@@ -116,7 +124,7 @@ li.links a {
       text-align: center;
       margin: 0 auto;
       font-family: mono, Helvetica, sans-serif;
-      transform: translateY(-0.75rem);
+      user-select: none;
     }
 
       .icons {
@@ -144,17 +152,39 @@ li.links a {
 .footerLogo {
   display: inline-grid;
   position: relative;
-  padding: 0 0.33rem;
-  margin: 0 auto;
-  margin-top: -0.33rem;
+  margin: 0 0.33rem;
   height: 1.75rem;
+  transform: translateY(-1.5rem);
   opacity: 90%;
 }
 
+/* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
+@media only screen and (max-height: 668px) {
+  .contentContainer {
+    margin-bottom: 1rem;
+  }
+  .box {
+    height: 5.5rem;
+    transform: translateY(-1rem);
+  }
+  .footerLogo {
+    transform: translateY(-2.5rem);
+    height: 1.25rem;
+  }
+  .icons {
+    height: 3rem;
+  }
 
+  .polar {
+    transform: translateY(13rem);
+  }
+}
 
 /* Larger phones, like the iPhone XR/XS */
 @media only screen and (min-height: 896px) {
+  .contentTitle {
+    transform: translate(-2rem, -1rem);
+  }
   .box {
     margin: 1rem auto;
   }
@@ -170,31 +200,11 @@ li.links a {
   }
 }
 
-
-/* Samsung and Google phones, smaller screens like the Note 3 and Google Pixel 2 */
-@media only screen and (max-height: 668px) {
-  .box {
-    height: 5.5rem;
-    transform: translateY(-1rem);
-  }
-  .footerLogo {
-    translate: 0 -0.5em;
-  }
-  .icons {
-    height: 3rem;
-  }
-
-  .polar {
-    transform: translateY(13rem);
-  }
-}
-
 /*
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 */
 
-/* MEDIA QUERY FOR PC/LAPTOP (LARGE SCREENS) */
+/* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
 
   li.links a {
@@ -202,30 +212,30 @@ li.links a {
     margin-left: 1rem;
   }
   
-    .gridContainer > div {
-      background-color: salmon; 
-      text-align: center;
-      padding-bottom: 0;
-    }
-      .item1 { grid-area: header; }
-      .item2 { grid-area: main; }
-      .item3 { grid-area: left; min-width: 6rem; }
-      .item4 { grid-area: footer; margin-bottom:1rem; }
-  
+  .gridContainer > div {
+    padding-bottom: 0;
+  }
+    .item3 { grid-area: left; min-width: 6rem; }
+    .item4 { grid-area: footer; margin-bottom:1rem; }
+
   .bearLogo {
     height: 7rem;
     margin: 0 7rem;
   }
+
+  .bunchabears {
+    padding: 1rem 0;
+  }
   
-  .rb {
-    height: 7rem;
+  #rb {
+    height: 7.25rem;
   }
   
   .contentContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(5rem, auto);
-    transform: translate(-10rem, -2rem);
+    transform: translate(-10rem, -4rem);
   }
   
     .contentTitle {
@@ -237,13 +247,12 @@ li.links a {
       .box {
         height: 11rem;
         width: 11rem;
-        box-shadow: 0 0.25rem rgba(100, 100, 100, 0.2);
-        -o-box-shadow: 0 0.25rem rgba(100, 100, 100, 0.2);
-        -webkit-box-shadow: 0 0.25rem rgba(100, 100, 100, 0.2);
-        -moz-box-shadow: 0 0.25rem rgba(100, 100, 100, 0.2);
+        box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -o-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -webkit-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -moz-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
         font-size: 1rem;
         line-height: 1rem;
-        user-select: none;
       }
   
         .icons {
@@ -252,7 +261,7 @@ li.links a {
   
   .polar {
     height: 10rem;
-    transform: translateY(10rem);
+    transform: translateY(13rem);
   }
   
     @keyframes peekaboo {
@@ -261,8 +270,8 @@ li.links a {
     }
   
   .footerLogo {
-    padding: 0 0.5rem;
-    transform:translateX(-0.75rem);
+    padding: 0 0.25rem;
+    transform:translate(-0.75rem, -2rem);
     margin-bottom: 0;
   }
 }

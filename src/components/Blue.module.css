@@ -47,13 +47,13 @@ html, body {
       'footer footer footer footer footer footer';
     grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
     grid-gap: 0;
-    background-color: royalblue;
+    background-color: rgb(100, 149, 237);
     height: 100%;
     width: auto;
   }
   
     .gridContainer > div {
-      background-color: royalblue;
+      background-color: rgb(100, 149, 237);
       text-align: center;
       padding-bottom: 0;
     }
@@ -210,15 +210,9 @@ html, body {
       font-size: 1rem;
       margin-left: 1rem;
     }
-    
-      .gridContainer > div {
-        background-color: cornflowerblue;
-        text-align: center;
-        padding-bottom: 0;
-      }
-        .item1 { background-color: khaki; }
-        .item3 { grid-area: left; min-width: 6rem; }
-        .item4 { grid-area: footer; margin-bottom:1rem; }
+
+    .item3 { grid-area: left; min-width: 6rem; }
+    .item4 { grid-area: footer; margin-bottom:1rem; }
 
     .bunchabears {
         padding: 1rem 0;

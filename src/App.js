@@ -25,15 +25,15 @@ class App extends React.Component {
                     <Link onClick={() => this.nextPath("/")} to="/">Home</Link>
                   </li>
 
-                  <li className="links blue">
+                  <li className="links">
                     <Link onClick={() => this.nextPath("/bluebear")} to="/bluebear">Blue Bear</Link>
                   </li>
 
-                  <li className="links brown">
+                  <li className="links">
                     <Link onClick={() => this.nextPath("/brownbear")} to="/brownbear">Brown Bear</Link>
                   </li>
 
-                  <li className="links red">
+                  <li className="links">
                     <Link onClick={() => this.nextPath("/redbear")} to="/redbear">Red Bear</Link>
                   </li>
                 </ul>
@@ -42,7 +42,11 @@ class App extends React.Component {
           </header>
 
           <div className="App">
-            <p>
+            <p className="brave">
+              Brave Bear
+            </p>
+
+            <p className="bunchabears">
               <button onClick={() => this.nextPath("/bluebear")}>
                     <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
               </button>

@@ -32,7 +32,7 @@ class BrownBearTemplate extends React.Component {
         <header>
           <nav>
             <div className={styles.navbar}>
-              <ul>
+              <ul classname={styles.ul}>
                 <li className={styles.links}>
                   <Link onClick={() => this.nextPath("/")} to="/">Home</Link>
                 </li>

@@ -11,10 +11,10 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
     word-wrap: none;
+    background-color: sienna;
   }
-    
+
   li.links {
     float: left;
   }
@@ -47,13 +47,12 @@ html, body {
       'footer footer footer footer footer footer';
     grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
     grid-gap: 0;
-    background-color: goldenrod;
     height: 100%;
     width: auto;
   }
   
     .gridContainer > div {
-      background-color: goldenrod;
+      background-color: sienna;
       text-align: center;
       padding-bottom: 0;
     }
@@ -74,14 +73,14 @@ html, body {
   }
 
     .bunchabears {
-        background-color: peachpuff;
+        background-color: #9aceeb;
         transform: translateY(-1rem);
         padding: 1rem 0;
     }
-        
-        #rb {
-          height: 4.75rem;
-        }
+      
+      #rb {
+        height: 4.75rem;
+      }
 
   .contentContainer {
     display: grid;
@@ -212,11 +211,8 @@ html, body {
     }
     
       .gridContainer > div {
-        background-color: sienna;
-        text-align: center;
         padding-bottom: 0;
       }
-        .item1 { background-color: cornflowerblue; }
         .item3 { grid-area: left; min-width: 6rem; }
         .item4 { grid-area: footer; margin-bottom:1rem; }
 

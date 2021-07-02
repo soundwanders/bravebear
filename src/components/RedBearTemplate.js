@@ -4,7 +4,7 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 import BlueBearImage from './media/bears/blueBear.png'
 import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
-import PeekingBear from './media/bears/polar-beige.png';
+import PeekingBear from './media/bears/polar-yellow.png';
 
 import AppDev from './media/icons/appDev.svg';
 import Cloud from './media/icons/cloud.svg';
