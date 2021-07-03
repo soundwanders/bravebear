@@ -65,7 +65,7 @@ class BrownBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item2}>
-                <div className={styles.contentTitle}><h3>Brave Bear Brown</h3></div>
+                <div className={styles.contentTitle}><h3>Brave Brown Bear</h3></div>
 
                 <div className={styles.contentContainer}>
                     <div className={styles.box}>

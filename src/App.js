@@ -26,7 +26,7 @@ class App extends React.Component {
                   </li>
 
                   <li className="links">
-                    <Link onClick={() => this.nextPath("/bluebear")} to="/bluebear">Blue Bear</Link>
+                    <Link onClick={()  => this.nextPath("/bluebear")} to="/bluebear">Blue Bear</Link>
                   </li>
 
                   <li className="links">

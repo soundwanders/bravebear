@@ -63,7 +63,7 @@ class BlueBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item2}>
-                <div className={styles.contentTitle}><h3>Brave Bear Red</h3></div>
+                <div className={styles.contentTitle}><h3>Brave Red Bear</h3></div>
 
                 <div className={styles.contentContainer}>
                     <div className={styles.box}>
@@ -76,7 +76,7 @@ class BlueBearTemplate extends React.Component {
                     <div className={styles.box}>
                       <p>Cloud Storage</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Cloud } alt="Cloud Storage" label="Full-Stack Web & Mobile AppDevelopment"/>
+                          <img className={styles.icons} src={ Cloud } alt="Cloud Storage"/>
                         </div>
                     </div>
 
