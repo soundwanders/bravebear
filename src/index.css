@@ -35,7 +35,7 @@ code {
 
 button {
   display: flexbox;
-  width: 30rem;
+  width: 15rem;
   height: 15rem;
   justify-content: center;
   align-content: center;
