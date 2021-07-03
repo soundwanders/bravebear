@@ -8,15 +8,13 @@ body {
 }
 
 code {
-  font-family: monospace, 'Roboto', Helvetica, sans-serif;
+  font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
 }
-
 
 .App {
   text-align: center;
   display: grid;
 }
-
 
 .brave {
   font-size: 3rem;
@@ -35,13 +33,13 @@ code {
 
 button {
   display: flexbox;
-  width: 15rem;
-  height: 15rem;
+  width: 7rem;
+  height: 7rem;
   justify-content: center;
   align-content: center;
   margin: 3%;
   border: 0;
-  border-radius: 12rem;
+  border-radius: 9rem;
 }
 
 li.links {
@@ -55,7 +53,7 @@ li.links a {
   text-align: center;
   padding: 0.875rem 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.65rem;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,6 +63,15 @@ li.links a {
 /* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
   .brave {
-    font-size: 12rem;
+    font-size: 10rem;
+  }
+  li.links a {
+    font-size: 1rem;
+  }
+  button {
+    display: flexbox;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 12rem;
   }
 }
