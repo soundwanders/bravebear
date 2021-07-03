@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, mono, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: monospace, -apple-system, BlinkMacSystemFont, mono, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,7 +8,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
+  font-family: monospace, 'Roboto', Helvetica, sans-serif;
 }
 
 
@@ -51,7 +51,7 @@ li.links {
 li.links a {
   display: block;
   color: black;
-  font-family: mono, Helvetica, sans-serif;
+  font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
   text-align: center;
   padding: 0.875rem 1rem;
   text-decoration: none;
