@@ -6,17 +6,17 @@ import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
 import PeekingBear from './media/bears/polar-green.png';
 
-import AppDev from './media/icons/png/appDev.png';
-import Cloud from './media/icons/png/cloud.png';
-import CMS from './media/icons/png/cms.png';
-import Database from './media/icons/png/database.png';
-import Maintenance from './media/icons/png/maintenance.png';
-import ECommerce from './media/icons/png/ecommerce.png';
+import Books from './media/icons/education/books.svg';
+import Class from './media/icons/education/class.svg';
+import Dorm from './media/icons/education/dorm.svg';
+import Graduate from './media/icons/education/graduate.svg';
+import Remote from './media/icons/education/remote.svg';
+import Library from './media/icons/education/library.svg';
 
-import Facebook from './media/icons/png/facebook.png';
-import Github from './media/icons/png/github-bluebear.png';
-import Instagram from './media/icons/png/instagram.png';
-import StackOverflow from './media/icons/png/stack-overflow.png';
+import Facebook from './media/icons/facebook.svg';
+import Github from './media/icons/github-bluebear.svg';
+import Instagram from './media/icons/instagram.svg';
+import StackOverflow from './media/icons/stack-overflow.svg';
 
 import styles from './Red.module.css';
 
@@ -24,6 +24,7 @@ class BlueBearTemplate extends React.Component {
   nextPath(path) { 
     this.props.history.push(path);
   }
+
   render() {
     return (
       <Router>
@@ -66,48 +67,49 @@ class BlueBearTemplate extends React.Component {
                 <div className={styles.contentTitle}><h3>Brave Red Bear</h3></div>
 
                 <div className={styles.contentContainer}>
-                    <div className={styles.box}>
-                      <p>App Development</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ AppDev } alt="Application Development"/>
-                        </div>
-                    </div>
-
-                    <div className={styles.box}>
-                      <p>Cloud Storage</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Cloud } alt="Cloud Storage"/>
-                        </div>
-                    </div>
-
-                    <div className={styles.box}>
-                      <p>CMS Software</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ CMS } alt="CMS Software"/>
-                        </div>
-                    </div>
-
-                    <div className={styles.box}>
-                      <p>E-Commerce</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ ECommerce } alt="E-Commerce Builds"/>
-                        </div>
-                    </div>
-
-                    <div className={styles.box}>
-                      <p>Server Hosting</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Database } alt="Server Hosting"/>
-                        </div>
-                    </div>
-
-                    <div className={styles.box}>
-                      <p>Site Maintenance</p>
-                        <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Maintenance } alt="Site Maintenance"/>
-                        </div>
-                    </div>
+                    
+                  <div className={styles.box}>
+                    <p>Brand New Library</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Library } alt="Brand New Library"/>
+                      </div>
                   </div>
+
+                  <div className={styles.box}>
+                    <p>Campus Housing</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Dorm } alt="Campus Housing"/>
+                      </div>
+                  </div>
+
+                  <div className={styles.box}>
+                    <p>Graduate Programs</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Graduate } alt="Graduate Programs"/>
+                      </div>
+                  </div>
+
+                  <div className={styles.box}>
+                    <p>In-Person Class</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Class } alt="In-Person Classes"/>
+                      </div>
+                  </div>
+
+                  <div className={styles.box}>
+                    <p>On-Campus Store</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Books } alt="On-Campus Store"/>
+                      </div>
+                  </div>
+
+                  <div className={styles.box}>
+                    <p>Remote Learning</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Remote } alt="Remote Learning"/>
+                      </div>
+                  </div>
+                </div>
               </div>
 
               <div className={styles.item3}>

@@ -6,17 +6,17 @@ import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
 import PeekingBear from './media/bears/polar-green.png';
 
-import AppDev from './media/icons/png/appDev.png';
-import Cloud from './media/icons/png/cloud.png';
-import CMS from './media/icons/png/cms.png';
-import Database from './media/icons/png/database.png';
-import Maintenance from './media/icons/png/maintenance.png';
-import ECommerce from './media/icons/png/ecommerce.png';
+import Grooming from './media/icons/pet/groom.svg';
+import Kennel from './media/icons/pet/kennel.svg';
+import Food from './media/icons/pet/food.svg';
+import Training from './media/icons/pet/training.svg';
+import Report from './media/icons/pet/report.svg';
+import Vet from './media/icons/pet/vet.svg';
 
-import Facebook from './media/icons/png/facebook.png';
-import Github from './media/icons/png/github-bluebear.png';
-import Instagram from './media/icons/png/instagram.png';
-import StackOverflow from './media/icons/png/stack-overflow.png';
+import Facebook from './media/icons/facebook.svg';
+import Github from './media/icons/github-bluebear.svg';
+import Instagram from './media/icons/instagram.svg';
+import StackOverflow from './media/icons/stack-overflow.svg';
 
 import styles from './Brown.module.css';
 
@@ -66,50 +66,50 @@ class BrownBearTemplate extends React.Component {
 
               <div className={styles.item2}>
                 <div className={styles.contentTitle}><h3>Brave Brown Bear</h3></div>
+                  <div className={styles.contentContainer}>
 
-                <div className={styles.contentContainer}>
                     <div className={styles.box}>
-                      <p>App Development</p>
+                      <p>Annual Reports</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ AppDev } alt="Application Development"/>
+                          <img className={styles.icons} src={ Report } alt="Full Transparency Reports"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Cloud Storage</p>
+                      <p>Grooming Services</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Cloud } alt="Cloud Storage"/>
+                          <img className={styles.icons} src={ Grooming } alt="Pet Grooming"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>CMS Software</p>
+                      <p>Nutrition Plans</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ CMS } alt="CMS Software"/>
+                          <img className={styles.icons} src={ Food } alt="Nutrition Plans"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>E-Commerce</p>
+                      <p>Overnight Kennel</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ ECommerce } alt="E-Commerce Builds"/>
+                          <img className={styles.icons} src={ Kennel } alt="Overnight Kennel"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Server Hosting</p>
+                      <p>Training School</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Database } alt="Server Hosting"/>
+                          <img className={styles.icons} src={ Training } alt="Training School"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Site Maintenance</p>
+                      <p>Our Vets Love Pets!</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Maintenance } alt="Site Maintenance"/>
+                          <img className={styles.icons} src={ Vet } alt="One-to-one Veterinarian Care"/>
                         </div>
                     </div>
-                  </div>
+                </div>
               </div>
 
               <div className={styles.item3}>
