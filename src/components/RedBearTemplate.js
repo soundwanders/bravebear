@@ -20,6 +20,7 @@ import StackOverflow from './media/icons/stack-overflow.svg';
 
 import styles from './Red.module.css';
 
+
 class BlueBearTemplate extends React.Component {
   nextPath(path) { 
     this.props.history.push(path);
@@ -95,7 +96,7 @@ class BlueBearTemplate extends React.Component {
                         <img className={styles.icons} src={ Library } alt="Brand New Library"/>
                       </div>
                   </div>
-                  
+
                   <div className={styles.box}>
                     <p>Remote Learning</p>
                       <div className={styles.iconContainer}>

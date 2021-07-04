@@ -1,277 +1,342 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    word-wrap: none;
-    background-color: sienna;
-  }
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 
-  li.links {
-    float: left;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  word-wrap: none;
+  background-color: sienna;
+}
+
+li.links {
+  float: left;
+}
+
+li.links a {
+  display: block;
+  color: black;
+  font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 0.65rem;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.wrapper {
+  display: grid;
+  height: 99%;
+  width: 100%;
+}
+
+.gridContainer {
+  display: inline-grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left main main main main main'
+    'left main main main main main'
+    'footer footer footer footer footer footer';
+  grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
+  grid-gap: 0;
+  height: 100%;
+  width: auto;
+}
+
+  .gridContainer > div {
+    background-color: sienna;
+    text-align: center;
+    padding-bottom: 0;
   }
   
-  li.links a {
-    display: block;
-    color: black;
+    .item1 { grid-area: header; }
+    .item2 { grid-area: main; }
+    /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
+    /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
+    .item3 { grid-area: left; min-width: 2.5rem; }
+    .item4 { grid-area: footer; margin-bottom:1rem; }
+
+.bearLogo {
+  opacity: 0.9;
+  height: 4.5rem;
+  width: auto;
+  margin: 0 1.33rem;
+  padding-top: 0.25rem;
+}
+
+  .bunchabears {
+    background-color: #9aceeb;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    padding: 1rem 0;
+  }
+    
+    #rb {
+      height: 4.75rem;
+    }
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(2rem, auto);
+  grid-gap: 2rem;
+  margin: 1rem 2rem;
+  align-content: center;
+  justify-content: center;
+  transform: translate(-1.5rem, -1rem);
+  -webkit-transform: translate(-1.5rem, -1rem);
+  -moz-transform: translate(-1.5rem, -1rem);
+  -o-transform: translate(-1.5rem, -1rem);
+}
+
+  .contentTitle {
+    display: grid;
+    color: #fff;
     font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-    text-align: center;
-    padding: 0.875rem 1rem;
-    text-decoration: none;
-    font-size: 0.65rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     font-display: swap;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .wrapper {
-    display: grid;
-    height: 99%;
-    width: 100%;
-  }
-  
-  .gridContainer {
-    display: inline-grid;
-    grid-template-areas:
-      'header header header header header header'
-      'left main main main main main'
-      'left main main main main main'
-      'footer footer footer footer footer footer';
-    grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
-    grid-gap: 0;
-    height: 100%;
-    width: auto;
-  }
-  
-    .gridContainer > div {
-      background-color: sienna;
-      text-align: center;
-      padding-bottom: 0;
-    }
-    
-      .item1 { grid-area: header; }
-      .item2 { grid-area: main; }
-      /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
-      /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
-      .item3 { grid-area: left; min-width: 2.5rem; }
-      .item4 { grid-area: footer; margin-bottom:1rem; }
-  
-  .bearLogo {
-    opacity: 0.9;
-    height: 4.5rem;
-    width: auto;
-    margin: 0 1.33rem;
-    padding-top: 0.25rem;
-  }
-
-    .bunchabears {
-        background-color: #9aceeb;
-        transform: translateY(-1rem);
-        padding: 1rem 0;
-    }
-      
-      #rb {
-        height: 4.75rem;
-      }
-
-  .contentContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(2rem, auto);
-    grid-gap: 2rem;
-    margin: 1rem 2rem;
-    align-content: center;
-    justify-content: center;
-    transform: translate(-1.5rem, -1rem);
-  }
-  
-    .contentTitle {
-      display: grid;
-      color: #fff;
-      font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-      font-size: 1.375rem;
-      line-height: 1.375rem;
-      font-display: swap;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      margin: 0 auto;
-      transform: translate(-2rem, -1.5rem);
-    }
-  
-      .box {
-        display: grid;
-        background-color: #fff;
-        height: 7rem;
-        width: 7.25rem;
-        border: 0.125rem solid #fff;
-        box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-        -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-        -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-        -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-        font-size: 0.65rem;
-        line-height: 0.625rem;
-        font-display: swap;
-        text-align: center;
-        margin: 0 auto;
-        font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-        user-select: none;
-      }
-  
-        .icons {
-          margin: 0 auto;
-          margin-bottom: 0.75rem;
-          height: 4rem;
-          width: auto;
-          opacity: 0.9;
-        }
-  
-  .polar {
-    display: grid;
-    height: 5rem;
-    padding: 0;
     margin: 0 auto;
-    transform: translateY(15rem);
-    animation: peekaboo 3000ms forwards ease-in;
-  }
-  
-    @keyframes peekaboo {
-      0% { margin-left: -5rem; }
-      100% { margin-left: -0.45rem; }
-    }
-  
-  .footerLogo {
-    display: inline-grid;
-    position: relative;
-    margin: 0 0.33rem;
-    margin-bottom: 0.25rem;
-    height: 1.75rem;
-    transform: translateY(-1.4rem);
-    opacity: 0.9;
-  }
-  
-  /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
-  @media only screen and (max-height: 668px) {
-    .contentContainer {
-      margin-bottom: 1rem;
-    }
-    .box {
-      height: 5.5rem;
-      transform: translateY(-1rem);
-    }
-    .footerLogo {
-      transform: translateY(-2.5rem);
-      height: 1.25rem;
-    }
-    .icons {
-      height: 3rem;
-    }
-  
-    .polar {
-      transform: translateY(13rem);
-    }
+    transform: translate(-2rem, -1.5rem);
+    -webkit-transform: translate(-2rem, -1.5rem);
+    -o-transform: translate(-2rem, -1.5rem);
+    -moz-transform: translate(-2rem, -1.5rem);
   }
 
-  /* Larger phones, like the iPhone XR/XS */
-  @media (min-height: 896px) {
-    .contentTitle {
-      transform: translate(-2rem, -1rem);
-    }
     .box {
-      margin: 1rem auto;
-    }
-    .footerLogo {
-      margin-top: 1rem;
-      transform: translateY(-31rem);
-    }
-    h3 {
-      font-size: 1.675rem;
-      margin-bottom: 1.675rem;
-    }
-    .polar {
-      transform: translateY(18rem);
-    }
-  }
-  
-  /*
-  //////////////////////////////////////////////////////////////////////////////////////
-  */
-  
-  /* Desktop and laptop stylesheet */
-  @media (min-width: 1028px) {
-  
-    li.links a {
-      font-size: 1rem;
-      margin-left: 1rem;
-    }
-    
-      .gridContainer > div {
-        padding-bottom: 0;
-      }
-        .item3 { grid-area: left; min-width: 6rem; }
-        .item4 { grid-area: footer; margin-bottom:1rem; }
-
-    .bunchabears {
-        padding: 1rem 0;
-    }
-    
-    .bearLogo {
-      height: 7rem;
-      margin: 0 7rem;
-    }
-    
-    #rb {
-      height: 7.25rem;
-    }
-    
-    .contentContainer {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: minmax(5rem, auto);
-      transform: translate(-10rem, -4rem);
+      background-color: #fff;
+      height: 7rem;
+      width: 7.25rem;
+      border: 0.125rem solid #fff;
+      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      font-size: 0.65rem;
+      line-height: 0.625rem;
+      font-display: swap;
+      text-align: center;
+      margin: 0 auto;
+      font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
+      user-select: none;
     }
-    
-      .contentTitle {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        transform: translate(-10rem, -2rem);
-      }
-    
-        .box {
-          height: 11rem;
-          width: 11rem;
-          box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
-          -o-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
-          -webkit-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
-          -moz-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
-          font-size: 0.9rem;
-          line-height: 1rem;
-        }
-    
-          .icons {
-            height: 6.5rem;
-          }
-    
+
+    .icons {
+      margin: 0 auto;
+      margin-bottom: 0.75rem;
+      height: 4rem;
+      width: auto;
+      opacity: 0.9;
+    }
+
     .polar {
-      height: 10rem;
-      transform: translateY(13rem);
+      display: grid;
+      height: 5rem;
+      padding: 0;
+      margin: 0 auto;
+      transform: translateY(15rem);
+      -webkit-transform: translateY(15rem);
+      -moz-transform: translateY(15rem);
+      -o-transform: translateY(15rem);
+      animation: peekaboo 3000ms forwards ease-in;
     }
     
       @keyframes peekaboo {
-        0% { margin-left: -5.5rem; }
-        100% { margin-left: -0.75rem; }
+        0% { margin-left: -5rem; }
+        100% { margin-left: -0.45rem; }
       }
     
     .footerLogo {
-      padding: 0 0.25rem;
-      transform: translate(-0.75rem, -2rem);
-      margin-bottom: 0;
+      display: inline-grid;
+      position: relative;
+      margin: 0 0.33rem;
+      height: 1.75rem;
+      transform: translateY(-1.5rem);
+      -webkit-transform: translateY(-1.5rem);
+      -moz-transform: translateY(-1.5rem);
+      -o-transform: translateY(-1.5rem);
+      opacity: 0.9;
     }
+
+/* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
+@media only screen and (max-height: 668px) {
+  .contentContainer {
+    margin-bottom: 1rem;
   }
+  .box {
+    height: 5.5rem;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+  }
+  .footerLogo {
+    transform: translateY(-2.5rem);
+    -webkit-transform: translateY(-2.5rem);
+    -moz-transform: translateY(-2.5rem);
+    -o-transform: translateY(-2.5rem);
+    height: 1.25rem;
+  }
+  .icons {
+    height: 3rem;
+  }
+
+  .polar {
+    transform: translateY(13rem);
+    -webkit-transform: translateY(13rem);
+    -moz-transform: translateY(13rem);
+    -o-transform: translateY(13rem);
+  }
+}
+
+/* Larger phones, like the iPhone XR/XS */
+@media (min-height: 896px) {
+  .contentTitle {
+    transform: translate(-2rem, -1rem);
+    -webkit-transform: translate(-2rem, -1rem);
+    -moz-transform: translate(-2rem, -1rem);
+    -o-transform: translate(-2rem, -1rem);
+  }
+  .box {
+    margin: 1rem auto;
+  }
+  .footerLogo {
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 1.675rem;
+    margin-bottom: 1.675rem;
+  }
+  .polar {
+    transform: translateY(20rem);
+    -webkit-transform: translateY(20rem);
+    -moz-transform: translateY(20);
+    -o-transform: translateY(20rem);
+  }
+}
+
+/*
+////////////////////////////////////////////////////////////////////////
+*/
+
+/* Desktop and laptop stylesheet */
+@media (min-width: 1028px) {
+
+  li.links a {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  .item3 { grid-area: left; min-width: 6rem; }
+  .item4 { grid-area: footer; margin-bottom:1rem; }
+
+  .bunchabears {
+    padding: 1rem 0;
+  }
+  
+  .bearLogo {
+    height: 7rem;
+    margin: 0 7rem;
+    user-select: none;
+    cursor: grabbing;
+  }
+
+  .bearLogo:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+  }
+  
+  #rb {
+    height: 7.25rem;
+  }
+  
+  .contentContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(5rem, auto);
+    transform: translate(-10rem, -4rem);
+    -webkit-transform: translate(-10rem, -4rem);
+    -moz-transform: translate(-10rem, -4rem);
+    -o-transform: translate(-10rem, -4rem);
+  }
+  
+    .contentTitle {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      transform: translate(-10rem, -2rem);
+      -webkit-transform: translate(-10rem, -2rem);
+      -moz-transform: translate(-10rem, -2rem);
+      -o-transform: translate(-10rem, -2rem);
+      user-select: none;
+    }
+  
+      .box {
+        height: 11rem;
+        width: 11rem;
+        box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -o-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -webkit-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        -moz-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+
+      .box:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transition-duration: 200ms;
+        -webkit-transition-duration: 200ms;
+        -moz-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+        background-color: #9aceeb;
+      }
+  
+        .icons {
+          height: 6.5rem;
+        }
+  
+  .polar {
+    height: 10rem;
+    transform: translateY(13rem);
+    -webkit-transform: translateY(13rem);
+    -moz-transform: translateY(13rem);
+    -o-transform: translateY(13rem);
+  }
+  
+    @keyframes peekaboo {
+      0% { margin-left: -5.5rem; }
+      100% { margin-left: -0.75rem; }
+    }
+  
+  .footerLogo {
+    padding: 0 0.25rem;
+    transform:translate(-0.75rem, -2rem);
+    -webkit-transform: translate(-0.75rem, -2rem);
+    -moz-transform:translate(-0.75rem, -2rem);
+    -o-transform:translate(-0.75rem, -2rem);
+    margin-bottom: 0;
+  }
+}
