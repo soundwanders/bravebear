@@ -14,7 +14,7 @@ import Remote from './media/icons/education/remote.svg';
 import Library from './media/icons/education/library.svg';
 
 import Facebook from './media/icons/facebook.svg';
-import Github from './media/icons/github-bluebear.svg';
+import Github from './media/icons/github.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
