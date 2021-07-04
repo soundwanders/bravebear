@@ -4,7 +4,7 @@ import { BrowserRouter as Router, withRouter, Link } from 'react-router-dom';
 import BlueBearImage from './media/bears/blueBear.png'
 import BrownBearImage from './media/bears/brownBear.png';
 import RedBearImage from './media/bears/redBear.png';
-import PeekingBear from './media/bears/polar-green.png';
+import PeekingBear from './media/bears/polar-blue.png';
 
 import Grooming from './media/icons/pet/groom.svg';
 import Kennel from './media/icons/pet/kennel.svg';
@@ -69,16 +69,16 @@ class BrownBearTemplate extends React.Component {
                   <div className={styles.contentContainer}>
 
                     <div className={styles.box}>
-                      <p>Annual Reports</p>
+                      <p>Grooming Services</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Report } alt="Full Transparency Reports"/>
+                          <img className={styles.icons} src={ Grooming } alt="Pet Grooming"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Grooming Services</p>
+                      <p>Medical Diagnosis</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Grooming } alt="Pet Grooming"/>
+                          <img className={styles.icons} src={ Report } alt="Full Transparency Reports"/>
                         </div>
                     </div>
 
@@ -97,16 +97,16 @@ class BrownBearTemplate extends React.Component {
                     </div>
 
                     <div className={styles.box}>
-                      <p>Training School</p>
+                      <p>Our Vets &#10084;&#65039; Pets!</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Training } alt="Training School"/>
+                          <img className={styles.icons} src={ Vet } alt="One-to-one Veterinarian Care"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Our Vets Love Pets!</p>
+                      <p>Training School</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Vet } alt="One-to-one Veterinarian Care"/>
+                          <img className={styles.icons} src={ Training } alt="Training School"/>
                         </div>
                     </div>
                 </div>

@@ -151,8 +151,9 @@ html, body {
     display: inline-grid;
     position: relative;
     margin: 0 0.33rem;
+    margin-bottom: 0.25rem;
     height: 1.75rem;
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.4rem);
     opacity: 0.9;
   }
   
@@ -179,7 +180,7 @@ html, body {
   }
 
   /* Larger phones, like the iPhone XR/XS */
-  @media only screen and (min-height: 896px) {
+  @media (min-height: 896px) {
     .contentTitle {
       transform: translate(-2rem, -1rem);
     }
@@ -188,13 +189,14 @@ html, body {
     }
     .footerLogo {
       margin-top: 1rem;
+      transform: translateY(-31rem);
     }
     h3 {
       font-size: 1.675rem;
       margin-bottom: 1.675rem;
     }
     .polar {
-      transform: translateY(20rem);
+      transform: translateY(18rem);
     }
   }
   
@@ -269,7 +271,7 @@ html, body {
     
     .footerLogo {
       padding: 0 0.25rem;
-      transform:translate(-0.75rem, -2rem);
+      transform: translate(-0.75rem, -2rem);
       margin-bottom: 0;
     }
   }

@@ -69,16 +69,9 @@ class BlueBearTemplate extends React.Component {
                 <div className={styles.contentContainer}>
                     
                   <div className={styles.box}>
-                    <p>Brand New Library</p>
+                    <p>Campus Store</p>
                       <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Library } alt="Brand New Library"/>
-                      </div>
-                  </div>
-
-                  <div className={styles.box}>
-                    <p>Campus Housing</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Dorm } alt="Campus Housing"/>
+                        <img className={styles.icons} src={ Books } alt="On-Campus Store"/>
                       </div>
                   </div>
 
@@ -90,23 +83,30 @@ class BlueBearTemplate extends React.Component {
                   </div>
 
                   <div className={styles.box}>
-                    <p>In-Person Class</p>
+                    <p>In-Person Classes</p>
                       <div className={styles.iconContainer}>
                         <img className={styles.icons} src={ Class } alt="In-Person Classes"/>
                       </div>
                   </div>
 
                   <div className={styles.box}>
-                    <p>On-Campus Store</p>
+                    <p>New Library!</p>
                       <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Books } alt="On-Campus Store"/>
+                        <img className={styles.icons} src={ Library } alt="Brand New Library"/>
                       </div>
                   </div>
-
+                  
                   <div className={styles.box}>
                     <p>Remote Learning</p>
                       <div className={styles.iconContainer}>
                         <img className={styles.icons} src={ Remote } alt="Remote Learning"/>
+                      </div>
+                  </div>
+
+                  <div className={styles.box}>
+                    <p>Student Housing</p>
+                      <div className={styles.iconContainer}>
+                        <img className={styles.icons} src={ Dorm } alt="Campus Housing"/>
                       </div>
                   </div>
                 </div>
