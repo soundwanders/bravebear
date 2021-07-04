@@ -46,7 +46,7 @@ class App extends React.Component {
               Brave Bear
             </p>
 
-            <p className="bunchabears">
+            <div className="bunchabears">
               <button onClick={() => this.nextPath("/bluebear")}>
                     <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
               </button>
@@ -58,7 +58,7 @@ class App extends React.Component {
               <button onClick={() => this.nextPath("/redbear")}>
                     <img src={ RedBearImage } className="bear red" alt="A Brave Red Bear"/>
               </button>
-            </p>
+            </div>
           </div>
         </main>
       </Router>

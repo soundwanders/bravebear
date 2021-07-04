@@ -20,27 +20,37 @@ code {
 .brave {
   font-size: 3rem;
   font-family: monospace;
+  font-weight: bold;
   color: #fff;
   padding: 0;
   margin: 0 auto;
+  margin-top: 1.5rem;
 }
 
 .bear {
-  height: 10vmax;
+  height: 12vmax;
   pointer-events: none;
   padding: 0 1rem;
   margin: 0 auto;
 }
 
+.bunchabears {
+  margin: 0 auto;
+}
+
 button {
-  display: flexbox;
-  width: 7rem;
-  height: 7rem;
-  justify-content: center;
+  display: flex;
   align-content: center;
-  margin: 3%;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  margin-top: 2rem;
   border: 0;
-  border-radius: 9rem;
+  border-radius: 10rem;
 }
 
 li.links {
@@ -60,19 +70,51 @@ li.links a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
+@media only screen and (max-height: 668px) {
+  button {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+/* Larger phones, like the iPhone XR/XS */
+@media only screen and (min-height: 896px) {
+  button {
+    width: 12rem;
+    height: 12rem;
+  }
+}
 
 /* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
   .brave {
     font-size: 10rem;
+    font-weight: bold;
+    margin-top: 2rem;
   }
+
   li.links a {
     font-size: 1rem;
+    margin-left: 1rem;
   }
+
   button {
-    display: flexbox;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 12rem;
+    display: inline-grid;
+    width: 100%;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 18rem;
+    margin: 4rem;
+}
+
+  button:hover {
+    opacity: 90%;
+    transform: scale(1.15);
+    transition-duration: 600ms;
+    box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);
   }
 }

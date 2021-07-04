@@ -54,7 +54,6 @@ li.links a {
 }
 
   .gridContainer > div {
-    background-color: salmon;
     text-align: center;
     padding-bottom: 0;
   }
@@ -257,10 +256,10 @@ li.links a {
   }
 
   .bearLogo:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
     transition-duration: 200ms;
     -webkit-transition-duration: 200ms;
     -moz-transition-duration: 200ms;
