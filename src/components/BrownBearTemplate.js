@@ -78,7 +78,7 @@ class BrownBearTemplate extends React.Component {
                     <div className={styles.box}>
                       <p>Medical Diagnosis</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Report } alt="Full Transparency Reports"/>
+                          <img className={styles.icons} src={ Report } alt="Full Medical Diagnosis"/>
                         </div>
                     </div>
 
