@@ -8,8 +8,12 @@ https://bravebear.netlify.app/
 
 - https://www.flaticon.com/authors/freepik
 
+- https://www.flaticon.com/authors/monkik
+
 - https://www.flaticon.com/authors/phatplus
 
 - https://www.flaticon.com/authors/pixel-perfect
+
+- https://www.flaticon.com/authors/ultimatearm
 
 - https://www.flaticon.com/authors/vector-budha
