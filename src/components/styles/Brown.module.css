@@ -11,11 +11,10 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
   word-wrap: none;
-  box-shadow: 2px rgba(212, 121, 121, 0.2);
+  background-color: sienna;
 }
-  
+
 li.links {
   float: left;
 }
@@ -33,6 +32,7 @@ li.links a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .wrapper {
   display: grid;
   height: 99%;
@@ -48,9 +48,9 @@ li.links a {
     'footer footer footer footer footer footer';
   grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
   grid-gap: 0;
-  background-color: salmon;
   height: 100%;
   width: auto;
+  background-color: sienna;
 }
 
   .gridContainer > div {
@@ -74,66 +74,68 @@ li.links a {
 }
 
   .bunchabears {
-    background-color: #c7ffe3;
+    background-color: #9aceeb;
     transform: translateY(-1rem);
     -webkit-transform: translateY(-1rem);
     -moz-transform: translateY(-1rem);
     -o-transform: translateY(-1rem);
     padding: 1rem 0;
   }
-      
+    
     #rb {
       height: 4.75rem;
     }
 
-  .contentContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(2rem, auto);
-    grid-gap: 2rem;
-    margin: 1rem 2rem;
-    align-content: center;
-    justify-content: center;
-    transform: translate(-1.5rem, -1rem);
-    -webkit-transform: translate(-1.5rem, -1rem);
-    -moz-transform: translate(-1.5rem, -1rem);
-    -o-transform: translate(-1.5rem, -1rem);
-  }
-  
-    .contentTitle {
-      display: grid;
-      color: #fff;
-      font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-      font-size: 1.375rem;
-      line-height: 1.375rem;
-      font-display: swap;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      margin: 0 auto;
-      transform: translate(-2rem, -1.5rem);
-      -webkit-transform: translate(-2rem, -1.5rem);
-      -o-transform: translate(-2rem, -1.5rem);
-      -moz-transform: translate(-2rem, -1.5rem);
-    }
+.contentContainer {
+  display: grid;
+  height: 70%;
+  width: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(2rem, auto);
+  grid-gap: 2rem;
+  margin: 1rem 2rem;
+  align-content: center;
+  justify-content: center;
+  transform: translate(-1.5rem, -1rem);
+  -webkit-transform: translate(-1.5rem, -1rem);
+  -moz-transform: translate(-1.5rem, -1rem);
+  -o-transform: translate(-1.5rem, -1rem);
+}
 
-  .box {
+  .contentTitle {
     display: grid;
-    background-color: #fff;
-    height: 7rem;
-    width: 7.25rem;
-    border: 0.125rem solid #fff;
-    box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    font-size: 0.65rem;
-    line-height: 0.625rem;
-    font-display: swap;
-    text-align: center;
-    margin: 0 auto;
+    color: #fff;
     font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-    user-select: none;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+    transform: translate(-2rem, -1.5rem);
+    -webkit-transform: translate(-2rem, -1.5rem);
+    -o-transform: translate(-2rem, -1.5rem);
+    -moz-transform: translate(-2rem, -1.5rem);
   }
+
+    .box {
+      display: grid;
+      background-color: #fff;
+      height: 7rem;
+      width: 7.25rem;
+      border: 0.125rem solid #fff;
+      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      font-size: 0.65rem;
+      line-height: 0.625rem;
+      font-display: swap;
+      text-align: center;
+      margin: 0 auto;
+      font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
+      user-select: none;
+    }
 
     .icons {
       margin: 0 auto;
@@ -143,68 +145,65 @@ li.links a {
       opacity: 0.9;
     }
 
-.polar {
-  display: grid;
-  height: 5rem;
-  padding: 0;
-  margin: 0 auto;
-  transform: translateY(15rem);
-  -webkit-transform: translateY(15rem);
-  -moz-transform: translateY(15rem);
-  -o-transform: translateY(15rem);
-  animation: peekaboo 3000ms forwards ease-in;
-}
-
-  @keyframes peekaboo {
-    0% { margin-left: -5rem; }
-    100% { margin-left: -0.45rem; }
-  }
-
-.footerLogo {
-  display: inline-grid;
-  position: relative;
-  margin: 0 0.33rem;
-  height: 1.75rem;
-  transform: translateY(-1.5rem);
-  -webkit-transform: translateY(-1.5rem);
-  -moz-transform: translateY(-1.5rem);
-  -o-transform: translateY(-1.5rem);
-  opacity: 0.9;
-}
-
-  /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
-  @media only screen and (max-height: 668px) {
-    .contentContainer {
-      margin-bottom: 1rem;
-    }
-    .box {
-      height: 5.5rem;
-      transform: translateY(-1rem);
-      -webkit-transform: translateY(-1rem);
-      -moz-transform: translateY(-1rem);
-      -o-transform: translateY(-1rem);
-    }
-    .footerLogo {
-      transform: translateY(-2.5rem);
-      -webkit-transform: translateY(-2.5rem);
-      -moz-transform: translateY(-2.5rem);
-      -o-transform: translateY(-2.5rem);
-      height: 1.25rem;
-    }
-    .icons {
-      height: 3rem;
-    }
-  
     .polar {
-      transform: translateY(13rem);
-      -webkit-transform: translateY(13rem);
-      -moz-transform: translateY(13rem);
-      -o-transform: translateY(13rem);
+      display: grid;
+      height: 5rem;
+      padding: 0;
+      margin: 0 auto;
+      transform: translateY(15rem);
+      -webkit-transform: translateY(15rem);
+      -moz-transform: translateY(15rem);
+      -o-transform: translateY(15rem);
+      animation: peekaboo 3000ms forwards ease-in;
     }
+    
+      @keyframes peekaboo {
+        0% { margin-left: -5rem; }
+        100% { margin-left: -0.45rem; }
+      }
+    
+    .footerLogo {
+      display: inline-grid;
+      position: relative;
+      margin: 0 0.33rem;
+      height: 1.75rem;
+      transform: translateY(-1.5rem);
+      -webkit-transform: translateY(-1.5rem);
+      -moz-transform: translateY(-1.5rem);
+      -o-transform: translateY(-1.5rem);
+      opacity: 0.9;
+    }
+
+/* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
+@media only screen and (max-height: 668px) {
+  .box {
+    height: 5.5rem;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
   }
+  .footerLogo {
+    transform: translateY(-2.5rem);
+    -webkit-transform: translateY(-2.5rem);
+    -moz-transform: translateY(-2.5rem);
+    -o-transform: translateY(-2.5rem);
+    height: 1.25rem;
+  }
+  .icons {
+    height: 3rem;
+  }
+
+  .polar {
+    transform: translateY(13rem);
+    -webkit-transform: translateY(13rem);
+    -moz-transform: translateY(13rem);
+    -o-transform: translateY(13rem);
+  }
+}
 
 /* Larger phones, like the iPhone XR/XS */
-@media only screen and (min-height: 896px) {
+@media (min-height: 896px) {
   .contentTitle {
     transform: translate(-2rem, -1rem);
     -webkit-transform: translate(-2rem, -1rem);
@@ -230,9 +229,9 @@ li.links a {
 }
 
 /*
-//////////////////////////////////////////////////////////////////////////////////////
-  */
-  
+////////////////////////////////////////////////////////////////////////
+*/
+
 /* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
 
@@ -273,7 +272,7 @@ li.links a {
   .contentContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(5rem, auto);
+    grid-auto-rows: minmax(2rem, auto);
     transform: translate(-10rem, -4rem);
     -webkit-transform: translate(-10rem, -4rem);
     -moz-transform: translate(-10rem, -4rem);
@@ -311,7 +310,7 @@ li.links a {
         -webkit-transition-duration: 200ms;
         -moz-transition-duration: 200ms;
         -o-transition-duration: 200ms;
-        background-color: #c7ffe3;
+        background-color: #9aceeb;
       }
   
         .icons {

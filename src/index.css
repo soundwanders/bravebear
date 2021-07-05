@@ -1,6 +1,9 @@
 body {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
   margin: 0;
+  padding: 0;
   font-family: monospace, -apple-system, BlinkMacSystemFont, mono, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +18,9 @@ code {
 .App {
   text-align: center;
   display: grid;
+  height: 100%;
+  width: auto;
+  background-color: navajowhite;
 }
 
 .brave {
@@ -25,6 +31,8 @@ code {
   padding: 0;
   margin: 0 auto;
   margin-top: 1.5rem;
+  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 3px silver;
 }
 
 .bear {
@@ -78,6 +86,13 @@ li.links a {
   }
 }
 
+@media only screen and (max-height: 800px) {
+  button {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
 /* Larger phones, like the iPhone XR/XS */
 @media only screen and (min-height: 896px) {
   button {
@@ -109,7 +124,7 @@ li.links a {
 }
 
   button:hover {
-    opacity: 90%;
+    opacity: 0.5;
     transform: scale(1.15);
     transition-duration: 600ms;
     box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);

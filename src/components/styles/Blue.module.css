@@ -34,8 +34,9 @@ li.links a {
 
 .wrapper {
   display: grid;
-  height: 99%;
-  width: 100%;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .gridContainer {
@@ -87,6 +88,8 @@ li.links a {
 
 .contentContainer {
   display: grid;
+  height: 70%;
+  width: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(2rem, auto);
   grid-gap: 2rem;

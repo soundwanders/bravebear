@@ -18,7 +18,7 @@ import Github from './media/icons/github-bluebear.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
-import styles from './Brown.module.css';
+import styles from './styles/Brown.module.css';
 
 
 class BrownBearTemplate extends React.Component {

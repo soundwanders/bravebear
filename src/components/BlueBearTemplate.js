@@ -18,7 +18,7 @@ import Github from './media/icons/github-bluebear.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
-import styles from './Blue.module.css';
+import styles from './styles/Blue.module.css';
 
 
 class BlueBearTemplate extends React.Component {

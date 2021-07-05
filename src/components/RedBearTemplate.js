@@ -18,7 +18,7 @@ import Github from './media/icons/github.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
-import styles from './Red.module.css';
+import styles from './styles/Red.module.css';
 
 
 class BlueBearTemplate extends React.Component {
@@ -68,7 +68,7 @@ class BlueBearTemplate extends React.Component {
                 <div className={styles.contentTitle}><h3>Brave Red Bear</h3></div>
 
                 <div className={styles.contentContainer}>
-                    
+                  
                   <div className={styles.box}>
                     <p>Campus Store</p>
                       <div className={styles.iconContainer}>
