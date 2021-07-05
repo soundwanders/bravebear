@@ -32,11 +32,11 @@ li.links a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .wrapper {
   display: grid;
   height: 100%;
-  width: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .gridContainer {
@@ -46,7 +46,7 @@ li.links a {
     'left main main main main main'
     'left main main main main main'
     'footer footer footer footer footer footer';
-  grid-template-rows: 0.25fr 0.5fr 0.5fr 0.25fr;
+  grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
   grid-gap: 0;
   height: 100%;
   width: auto;
@@ -63,7 +63,7 @@ li.links a {
     /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
     /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
     .item3 { grid-area: left; min-width: 2.5rem; }
-    .item4 { grid-area: footer; }
+    .item4 { grid-area: footer; margin-bottom: 1rem; }
 
 .bearLogo {
   opacity: 0.9;
@@ -88,8 +88,6 @@ li.links a {
 
 .contentContainer {
   display: grid;
-  height: 70%;
-  width: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(2rem, auto);
   grid-gap: 2rem;
@@ -336,6 +334,6 @@ li.links a {
       transform:translate(-0.75rem, -3rem);
       -webkit-transform: translate(-0.75rem, -3rem);
       -moz-transform:translate(-0.75rem, -3rem);
-      -o-transform:translate(-0.75rem, -3 rem);
+      -o-transform:translate(-0.75rem, -3rem);
   }
 }
