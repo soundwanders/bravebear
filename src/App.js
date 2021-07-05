@@ -41,25 +41,27 @@ class App extends React.Component {
             </nav>
           </header>
 
-          <div className="App">
-            <p className="brave">
-              Brave Bear
-            </p>
+          <body>
+            <div className="App">
+              <p className="brave">
+                Brave Bear
+              </p>
 
-            <div className="bunchabears">
-              <button onClick={() => this.nextPath("/bluebear")}>
-                    <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
-              </button>
+              <div className="bunchabears">
+                <button onClick={() => this.nextPath("/bluebear")}>
+                      <img src={ BlueBearImage } className="bear blue" alt="A Brave Blue Bear"/>
+                </button>
 
-              <button onClick={() => this.nextPath("/brownbear")}>
-                    <img src={ BrownBearImage } className="bear brown" alt="A Brave Brown Bear"/>
-              </button>
+                <button onClick={() => this.nextPath("/brownbear")}>
+                      <img src={ BrownBearImage } className="bear brown" alt="A Brave Brown Bear"/>
+                </button>
 
-              <button onClick={() => this.nextPath("/redbear")}>
-                    <img src={ RedBearImage } className="bear red" alt="A Brave Red Bear"/>
-              </button>
+                <button onClick={() => this.nextPath("/redbear")}>
+                      <img src={ RedBearImage } className="bear red" alt="A Brave Red Bear"/>
+                </button>
+              </div>
             </div>
-          </div>
+          </body>
         </main>
       </Router>
     )
