@@ -46,7 +46,7 @@ li.links a {
     'left main main main main main'
     'left main main main main main'
     'footer footer footer footer footer footer';
-  grid-template-rows: 0.25fr 0.5fr 0.5fr 0.25fr;
+  grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
   grid-gap: 0;
   background-color: rgb(100, 149, 237);
   height: 100%;

@@ -330,12 +330,12 @@ li.links a {
       0% { margin-left: -5.5rem; }
       100% { margin-left: -0.75rem; }
     }
-
-  .footerLogo {
-    padding: 0 0.25rem;
-    transform:translate(-0.75rem, -3rem);
-    -webkit-transform: translate(-0.75rem, -3rem);
-    -moz-transform:translate(-0.75rem, -3rem);
-    -o-transform:translate(-0.75rem, -3 rem);
+  
+    .footerLogo {
+      padding: 0 0.25rem;
+      transform:translate(-0.75rem, -3rem);
+      -webkit-transform: translate(-0.75rem, -3rem);
+      -moz-transform:translate(-0.75rem, -3rem);
+      -o-transform:translate(-0.75rem, -3 rem);
   }
 }
