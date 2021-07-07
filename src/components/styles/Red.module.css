@@ -87,7 +87,6 @@ li.links a {
   grid-gap: 2rem;
   margin: 1rem 2rem;
   align-content: center;
-  justify-content: center;
   transform: translate(-1.5rem, -1.5rem);
   -webkit-transform: translate(-1.5rem, -1.5rem);
   -moz-transform: translate(-1.5rem, -1.5rem);
