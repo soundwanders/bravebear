@@ -65,52 +65,51 @@ class BlueBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item2}>
-                <div className={styles.contentTitle}><h3>Brave Red Bear</h3></div>
+                <div className={styles.contentTitle}><h3>Brave Blue Bear</h3></div>
+                  <div className={styles.contentContainer}>
+                    
+                    <div className={styles.box}>
+                      <p>Campus Store</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Books } alt="On-Campus Store"/>
+                        </div>
+                    </div>
 
-                <div className={styles.contentContainer}>
-                  
-                  <div className={styles.box}>
-                    <p>Campus Store</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Books } alt="On-Campus Store"/>
-                      </div>
-                  </div>
+                    <div className={styles.box}>
+                      <p>Graduate Programs</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Graduate } alt="Graduate Programs"/>
+                        </div>
+                    </div>
 
-                  <div className={styles.box}>
-                    <p>Graduate Programs</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Graduate } alt="Graduate Programs"/>
-                      </div>
-                  </div>
+                    <div className={styles.box}>
+                      <p>In-Person Classes</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Class } alt="In-Person Classes"/>
+                        </div>
+                    </div>
 
-                  <div className={styles.box}>
-                    <p>In-Person Classes</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Class } alt="In-Person Classes"/>
-                      </div>
-                  </div>
+                    <div className={styles.box}>
+                      <p>New Library!</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Library } alt="Brand New Library"/>
+                        </div>
+                    </div>
 
-                  <div className={styles.box}>
-                    <p>New Library!</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Library } alt="Brand New Library"/>
-                      </div>
-                  </div>
+                    <div className={styles.box}>
+                      <p>Remote Learning</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Remote } alt="Remote Learning"/>
+                        </div>
+                    </div>
 
-                  <div className={styles.box}>
-                    <p>Remote Learning</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Remote } alt="Remote Learning"/>
-                      </div>
+                    <div className={styles.box}>
+                      <p>Student Housing</p>
+                        <div className={styles.iconContainer}>
+                          <img className={styles.icons} src={ Dorm } alt="Campus Housing"/>
+                        </div>
+                    </div>
                   </div>
-
-                  <div className={styles.box}>
-                    <p>Student Housing</p>
-                      <div className={styles.iconContainer}>
-                        <img className={styles.icons} src={ Dorm } alt="Campus Housing"/>
-                      </div>
-                  </div>
-                </div>
               </div>
 
               <div className={styles.item3}>
@@ -127,7 +126,6 @@ class BlueBearTemplate extends React.Component {
               </div>
             </div>
           </div>
-
         </main>
       </Router>
     )

@@ -44,7 +44,7 @@ code {
   margin: 0 auto;
 }
 
-.bunchabears {
+.threeBears {
   margin: 0 auto;
 }
 
@@ -113,7 +113,7 @@ li.links a {
 
   li.links a {
     font-size: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.75rem;
   }
 
   button {
