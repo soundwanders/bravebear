@@ -58,27 +58,27 @@ li.links a {
     .item3 { grid-area: left; min-width: 2.5rem; }
     .item4 { grid-area: footer; }
 
-.bearLogo {
-  opacity: 0.9;
-  height: 4rem;
-  width: auto;
-  margin: 0 auto;
-  padding-top: 0.25rem;
-  transform: translate(-1rem, 0);
-}
-
   .bunchabears {
-    background-color: #c7ffe3;
+    background-color: peachpuff;
     transform: translateY(-1rem);
     -webkit-transform: translateY(-1rem);
     -moz-transform: translateY(-1rem);
     -o-transform: translateY(-1rem);
     padding: 1rem 0;
   }
-    
-    #rb {
-      height: 4.25rem;
+
+    .bearLogo {
+      opacity: 0.9;
+      height: 4rem;
+      width: auto;
+      margin: 0 1.33rem;
+      padding-top: 0.25rem;
+      transform: translate(-1rem, 0);
     }
+    
+      #rb {
+        height: 4.25rem;
+      }
 
 .contentContainer {
   display: grid;
@@ -88,10 +88,10 @@ li.links a {
   margin: 1rem 2rem;
   align-content: center;
   justify-content: center;
-  transform: translate(-1.5rem, -1rem);
-  -webkit-transform: translate(-1.5rem, -1rem);
-  -moz-transform: translate(-1.5rem, -1rem);
-  -o-transform: translate(-1.5rem, -1rem);
+  transform: translate(-1.5rem, -1.5rem);
+  -webkit-transform: translate(-1.5rem, -1.5rem);
+  -moz-transform: translate(-1.5rem, -1.5rem);
+  -o-transform: translate(-1.5rem, -1.5rem);
 }
 
   .contentTitle {
@@ -331,9 +331,9 @@ li.links a {
     
     .footerLogo {
       padding: 0 0.25rem;
-      transform:translate(-0.75rem, -0.5rem);
-      -webkit-transform: translate(-0.75rem, -0.5rem);
-      -moz-transform:translate(-0.75rem, -0.5rem);
-      -o-transform:translate(-0.75rem, -0.5rem);
+      transform: translate(-0.75rem, 0);
+      -webkit-transform: translate(-0.75rem, 0);
+      -moz-transform: translate(-0.75rem, 0);
+      -o-transform: translate(-0.75rem, 0);
     }
 }

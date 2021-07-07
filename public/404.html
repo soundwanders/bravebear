@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title>Unable to find the page you are looking for (404 error)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   body {
-    background-color: #3498db;
+    background-color: #64a6d3;
     color: #2E2F30;
     font-family: sans-serif;
     margin: 0;
+    overflow: hidden;
+    text-align: center;
   }
 
   footer {
@@ -23,16 +25,17 @@
   a {
     color: #fff;
     font-size: 2rem;
+    text-decoration: none;
   }
 
   a:hover {
-    color: #393939;
+    color: #ffb0b0;
   }
 
   .dialog {
     float:right;
-    text-align: left;
-    width: 50%;
+    text-align: center;
+    width: 90%;
     margin: 5% auto 0;
   }
 
@@ -47,7 +50,7 @@
     color: #fff;
     padding-right: 5%;
   }
-  .image {
+  .milk {
     position: absolute;
     float: left;
     width: 64%;
@@ -55,7 +58,7 @@
 
   }
   @media only screen and (max-width: 767px) {
-    .image {
+    .milk {
       width: 90%;
       margin: 5% 0 0 5%;
     }
@@ -70,16 +73,18 @@
 
 <body>
   
-  <div>
-    <div class="dialog">
-      <h1>Oops.</h1>
+  <div className="wrapper">
+    <div className="dialog">
+      <h1>Oops!</h1>
       <p>
-        Unable to find the page you were looking for. <br />
-        Please follow the link below to go back to the Home page. Thank you!
+        Unable to find the page you are looking for, sorry! <br>
+        This single-page application does not require a Refresh. <br />
+        Please follow the link below to return to the Home page
       </p>
     </div>
-    <img src="%PUBLIC_URL%/milk.png" class="image">
-  </div> 
+    <img src="./milk.png" type="image/png" className="milk">
+
+    <h3><a href="https://bravebear.netlify.app/">BraveBear Home Page  &hookleftarrow;</a></h3>
+  </div>
 </body>
-<footer><a href="https://bravebear.netlify.app/">BraveBear Home</a></footer>
 </html>

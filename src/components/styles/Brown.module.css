@@ -58,27 +58,27 @@ li.links a {
     .item3 { grid-area: left; min-width: 2.5rem; }
     .item4 { grid-area: footer; }
 
-.bearLogo {
-  opacity: 0.9;
-  height: 4rem;
-  width: auto;
-  margin: 0 1.33rem;
-  padding-top: 0.25rem;
-  transform: translate(-1rem, 0);
-}
-
   .bunchabears {
-    background-color: #9aceeb;
+    background-color: peachpuff;
     transform: translateY(-1rem);
     -webkit-transform: translateY(-1rem);
     -moz-transform: translateY(-1rem);
     -o-transform: translateY(-1rem);
     padding: 1rem 0;
   }
-    
-    #rb {
-      height: 4.25rem;
+
+    .bearLogo {
+      opacity: 0.9;
+      height: 4rem;
+      width: auto;
+      margin: 0 1.33rem;
+      padding-top: 0.25rem;
+      transform: translate(-1rem, 0);
     }
+    
+      #rb {
+        height: 4.25rem;
+      }
 
 .contentContainer {
   display: grid;
