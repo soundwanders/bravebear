@@ -1,132 +1,134 @@
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #fff;
-word-wrap: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  word-wrap: none;
+  background-color: #fff;
 }
 
 li.links {
-float: left;
+  float: left;
 }
 
 li.links a {
-display: block;
-color: black;
-font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-text-align: center;
-padding: 0.875rem 1rem;
-text-decoration: none;
-font-size: 0.65rem;
-font-display: swap;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-
-.wrapper {
-display: grid;
-height: 100%;
-width: auto;
-margin: 0 auto;
-}
-
-.gridContainer {
-display: inline-grid;
-grid-template-areas:
-  'header header header header header header'
-  'left main main main main main'
-  'left main main main main main'
-  'footer footer footer footer footer footer';
-grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
-grid-gap: 0;
-background-color: rgb(100, 149, 237);
-height: calc(100vh - 40px);
-width: auto;
-}
-
-.gridContainer > div {
-  text-align: center;
-  padding-bottom: 0;
-}
-
-  .item1 { grid-area: header; }
-  .item2 { grid-area: main; }
-  /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
-  /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
-  .item3 { grid-area: left; min-width: 2.5rem; }
-  .item4 { grid-area: footer; }
-
-.bearLogo {
-opacity: 0.9;
-height: 4.5rem;
-width: auto;
-margin: 0 1.33rem;
-padding-top: 0.25rem;
-}
-
-.bunchabears {
-  background-color: peachpuff;
-  transform: translateY(-1rem);
-  -webkit-transform: translateY(-1rem);
-  -moz-transform: translateY(-1rem);
-  -o-transform: translateY(-1rem);
-  padding: 1rem 0;
-}
-    
-    #rb {
-      height: 4.75rem;
-    }
-
-.contentContainer {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-auto-rows: minmax(2rem, auto);
-grid-gap: 2rem;
-margin: 1rem 2rem;
-align-content: center;
-justify-content: center;
-transform: translate(-1.5rem, -1rem);
--webkit-transform: translate(-1.5rem, -1rem);
--moz-transform: translate(-1.5rem, -1rem);
--o-transform: translate(-1.5rem, -1rem);
-}
-
-.contentTitle {
-  display: grid;
-  color: #fff;
+  display: block;
+  color: black;
   font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-  font-size: 1.375rem;
-  line-height: 1.375rem;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 0.65rem;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0 auto;
-  transform: translate(-2rem, -1.5rem);
-  -webkit-transform: translate(-2rem, -1.5rem);
-  -o-transform: translate(-2rem, -1.5rem);
-  -moz-transform: translate(-2rem, -1.5rem);
+  white-space: nowrap;
 }
 
-  .box {
-    display: grid;
-    background-color: #fff;
-    height: 7rem;
-    width: 7.25rem;
-    border: 0.125rem solid #fff;
-    box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
-    font-size: 0.65rem;
-    line-height: 0.625rem;
-    font-display: swap;
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.gridContainer {
+  display: inline-grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left main main main main main'
+    'left main main main main main'
+    'footer footer footer footer footer footer';
+  grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
+  grid-gap: 0;
+  height: calc(100vh - 40px);
+  width: auto;
+  background-color: #6699ff;
+}
+
+  .gridContainer > div {
     text-align: center;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-    font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
-    user-select: none;
+    padding-bottom: 0;
   }
+  
+    .item1 { grid-area: header; }
+    .item2 { grid-area: main; }
+    /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
+    /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
+    .item3 { grid-area: left; min-width: 2.5rem; }
+    .item4 { grid-area: footer; }
+
+.bearLogo {
+  opacity: 0.9;
+  height: 4rem;
+  width: auto;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  transform: translate(-1rem, 0);
+}
+
+  .bunchabears {
+    background-color: peachpuff;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    padding: 1rem 0;
+  }
+    
+    #rb {
+      height: 4.25rem;
+    }
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(2rem, auto);
+  grid-gap: 2rem;
+  margin: 1rem 2rem;
+  align-content: center;
+  justify-content: center;
+  transform: translate(-1.5rem, -1rem);
+  -webkit-transform: translate(-1.5rem, -1rem);
+  -moz-transform: translate(-1.5rem, -1rem);
+  -o-transform: translate(-1.5rem, -1rem);
+}
+
+  .contentTitle {
+    display: grid;
+    color: #fff;
+    font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+    transform: translate(-2rem, -1.5rem);
+    -webkit-transform: translate(-2rem, -1.5rem);
+    -o-transform: translate(-2rem, -1.5rem);
+    -moz-transform: translate(-2rem, -1.5rem);
+  }
+
+    .box {
+      display: grid;
+      background-color: #fff;
+      height: 7rem;
+      width: 7.25rem;
+      border: 0.125rem solid #fff;
+      box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -o-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -webkit-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      -moz-box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
+      font-size: 0.65rem;
+      line-height: 0.625rem;
+      font-display: swap;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+      font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
+      user-select: none;
+    }
 
     .icons {
       margin: 0 auto;
@@ -136,40 +138,46 @@ transform: translate(-1.5rem, -1rem);
       opacity: 0.9;
     }
 
-.polar {
-display: grid;
-height: 5rem;
-padding: 0;
-margin: 0 auto;
-transform: translateY(15rem);
--webkit-transform: translateY(15rem);
--moz-transform: translateY(15rem);
--o-transform: translateY(15rem);
-animation: peekaboo 3000ms forwards ease-in;
-}
+    .polar {
+      display: grid;
+      height: 5rem;
+      padding: 0;
+      margin: 0 auto;
+      transform: translateY(15rem);
+      -webkit-transform: translateY(15rem);
+      -moz-transform: translateY(15rem);
+      -o-transform: translateY(15rem);
+      animation: peekaboo 3000ms forwards ease-in;
+    }
+    
+      @keyframes peekaboo {
+        0% { margin-left: -5rem; }
+        100% { margin-left: -0.45rem; }
+      }
+    
+    .pageFooter {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      overflow: hidden;
+    }
 
-@keyframes peekaboo {
-  0% { margin-left: -5rem; }
-  100% { margin-left: -0.45rem; }
-}
-
-.footerLogo {
-display: inline-grid;
-position: relative;
-margin: 0 0.33rem;
-height: 1.75rem;
-transform: translateY(-1.55rem);
--webkit-transform: translateY(-1.55rem);
--moz-transform: translateY(-1.55rem);
--o-transform: translateY(-1.55rem);
-opacity: 0.9;
-}
+      .footerLogo {
+        display: inline-grid;
+        position: relative;
+        margin: 0 0.33rem;
+        height: 1.75rem;
+        transform: translateY(-1.55rem);
+        -webkit-transform: translateY(-1.55rem);
+        -moz-transform: translateY(-1.55rem);
+        -o-transform: translateY(-1.55rem);
+        opacity: 0.9;
+      }
 
 /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
 @media only screen and (max-height: 668px) {
-  .contentContainer {
-    margin-bottom: 1rem;
-  }
   .box {
     height: 5.5rem;
     transform: translateY(-1rem);
@@ -197,7 +205,7 @@ opacity: 0.9;
 }
 
 /* Larger phones, like the iPhone XR/XS */
-@media only screen and (min-height: 896px) {
+@media (min-height: 896px) {
   .contentTitle {
     transform: translate(-2rem, -1rem);
     -webkit-transform: translate(-2rem, -1rem);
@@ -223,7 +231,7 @@ opacity: 0.9;
 }
 
 /*
-//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 */
 
 /* Desktop and laptop stylesheet */
@@ -234,57 +242,54 @@ opacity: 0.9;
     margin-left: 1rem;
   }
 
+  li.links:hover {
+    transform:scaleX(1);
+  }
+
   .item3 { grid-area: left; min-width: 6rem; }
   .item4 { grid-area: footer; margin-bottom:1rem; }
 
   .bunchabears {
     padding: 1rem 0;
   }
-
+  
   .bearLogo {
-    height: 7rem;
+    height: 6rem;
     margin: 0 7rem;
     user-select: none;
     cursor: grabbing;
   }
 
   .bearLogo:hover {
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    transition-duration: 200ms;
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
+    opacity: 0.8;
   }
-
-    #rb {
-      height: 7.25rem;
-    }
-
+  
+  #rb {
+    height: 6.25rem;
+  }
+  
   .contentContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(5rem, auto);
+    grid-auto-rows: minmax(2rem, auto);
     transform: translate(-10rem, -4rem);
     -webkit-transform: translate(-10rem, -4rem);
     -moz-transform: translate(-10rem, -4rem);
     -o-transform: translate(-10rem, -4rem);
   }
-
+  
     .contentTitle {
       font-size: 2.5rem;
       line-height: 2.5rem;
-      transform: translate(-10rem, -2rem);
-      -webkit-transform: translate(-10rem, -2rem);
-      -moz-transform: translate(-10rem, -2rem);
-      -o-transform: translate(-10rem, -2rem);
+      transform: translate(-10rem, -3rem);
+      -webkit-transform: translate(-10rem, -3rem);
+      -moz-transform: translate(-10rem, -3rem);
+      -o-transform: translate(-10rem, -3rem);
       user-select: none;
     }
-
+  
       .box {
-        height: 11rem;
+        height: 10rem;
         width: 11rem;
         box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
         -o-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
@@ -304,13 +309,13 @@ opacity: 0.9;
         -webkit-transition-duration: 200ms;
         -moz-transition-duration: 200ms;
         -o-transition-duration: 200ms;
-        background-color:peachpuff;
+        background-color: peachpuff;
       }
-
+  
         .icons {
-          height: 6.5rem;
+          height: 6rem;
         }
-
+  
   .polar {
     height: 10rem;
     transform: translateY(13rem);
@@ -318,17 +323,17 @@ opacity: 0.9;
     -moz-transform: translateY(13rem);
     -o-transform: translateY(13rem);
   }
-
+  
     @keyframes peekaboo {
       0% { margin-left: -5.5rem; }
       100% { margin-left: -0.75rem; }
     }
-
-  .footerLogo {
-    padding: 0 0.25rem;
-    transform:translate(-0.75rem, -0.5rem);
-    -webkit-transform: translate(-0.75rem, -0.5rem);
-    -moz-transform:translate(-0.75rem, -0.5rem);
-    -o-transform:translate(-0.75rem, -0.5rem);
-  }
+    
+    .footerLogo {
+      padding: 0 0.25rem;
+      transform:translate(-0.75rem, -0.5rem);
+      -webkit-transform: translate(-0.75rem, -0.5rem);
+      -moz-transform:translate(-0.75rem, -0.5rem);
+      -o-transform:translate(-0.75rem, -0.5rem);
+    }
 }

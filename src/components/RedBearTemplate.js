@@ -21,7 +21,7 @@ import StackOverflow from './media/icons/stack-overflow.svg';
 import styles from './styles/Red.module.css';
 
 
-class BlueBearTemplate extends React.Component {
+class RedBearTemplate extends React.Component {
   nextPath(path) { 
     this.props.history.push(path);
   }
@@ -65,7 +65,7 @@ class BlueBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item2}>
-                <div className={styles.contentTitle}><h3>Brave Blue Bear</h3></div>
+                <div className={styles.contentTitle}><h3>Brave Red Bear</h3></div>
                   <div className={styles.contentContainer}>
                     
                     <div className={styles.box}>
@@ -132,4 +132,4 @@ class BlueBearTemplate extends React.Component {
   }
 };
 
-export default withRouter(BlueBearTemplate);
+export default withRouter(RedBearTemplate);

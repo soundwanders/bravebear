@@ -14,7 +14,7 @@ import Report from './media/icons/pet/report.svg';
 import Vet from './media/icons/pet/vet.svg';
 
 import Facebook from './media/icons/facebook.svg';
-import Github from './media/icons/github-bluebear.svg';
+import Github from './media/icons/github.svg';
 import Instagram from './media/icons/instagram.svg';
 import StackOverflow from './media/icons/stack-overflow.svg';
 
@@ -32,7 +32,7 @@ class BrownBearTemplate extends React.Component {
         <header>
           <nav>
             <div className={styles.navbar}>
-              <ul classname={styles.ul}>
+              <ul>
                 <li className={styles.links}>
                   <Link onClick={() => this.nextPath("/")} to="/">Home</Link>
                 </li>
@@ -90,16 +90,16 @@ class BrownBearTemplate extends React.Component {
                     </div>
 
                     <div className={styles.box}>
-                      <p>Overnight Kennel</p>
+                      <p>Our Vets &#10084;&#65039; Pets!</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Kennel } alt="Overnight Kennel"/>
+                          <img className={styles.icons} src={ Vet } alt="One-to-one Veterinarian Care"/>
                         </div>
                     </div>
 
                     <div className={styles.box}>
-                      <p>Our Vets &#10084;&#65039; Pets!</p>
+                      <p>Overnight Kennel</p>
                         <div className={styles.iconContainer}>
-                          <img className={styles.icons} src={ Vet } alt="One-to-one Veterinarian Care"/>
+                          <img className={styles.icons} src={ Kennel } alt="Overnight Kennel"/>
                         </div>
                     </div>
 
@@ -109,6 +109,7 @@ class BrownBearTemplate extends React.Component {
                           <img className={styles.icons} src={ Training } alt="Training School"/>
                         </div>
                     </div>
+
                 </div>
               </div>
 
@@ -117,12 +118,12 @@ class BrownBearTemplate extends React.Component {
               </div>
 
               <div className={styles.item4}>
-                <p>
+                <footer>
                   <a href="https://facebook.com" target="_blank" rel="noreferrer"><img className ={styles.footerLogo} src={ Facebook } alt="Facebook"/></a>
                   <a href="https://instagram.com" target="_blank" rel="noreferrer"><img className={styles.footerLogo} src={ Instagram } alt="Instagram"/></a>
                   <a href="https://github.com" target="_blank" rel="noreferrer"><img className={styles.footerLogo} src={ Github } alt="Github"/></a>
                   <a href="https://stackoverflow.com" target="_blank" rel="noreferrer"><img className={styles.footerLogo} src={ StackOverflow } alt="Stack Overflow"/></a>
-                </p>
+                </footer>
               </div>
             </div>
           </div>
