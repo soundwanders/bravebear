@@ -4,7 +4,7 @@ ul {
   padding: 0;
   overflow: hidden;
   word-wrap: none;
-  background-color: sienna;
+  background-color: #fff;
 }
 
 li.links {
@@ -43,7 +43,7 @@ li.links a {
   grid-gap: 0;
   height: calc(100vh - 40px);
   width: auto;
-  background-color: sienna;
+  background-color: #a0522d;
 }
 
   .gridContainer > div {
@@ -59,7 +59,7 @@ li.links a {
     .item4 { grid-area: footer; }
 
   .bunchabears {
-    background-color: peachpuff;
+    background-color: #9aceeb;
     transform: translateY(-1rem);
     -webkit-transform: translateY(-1rem);
     -moz-transform: translateY(-1rem);
@@ -153,21 +153,28 @@ li.links a {
         0% { margin-left: -5rem; }
         100% { margin-left: -0.45rem; }
       }
-    
-    .footerLogo {
-      display: inline-grid;
-      position: relative;
-      margin: 0 0.33rem;
-      height: 1.75rem;
-      transform: translateY(-1.55rem);
-      -webkit-transform: translateY(-1.55rem);
-      -moz-transform: translateY(-1.55rem);
-      -o-transform: translateY(-1.55rem);
-      opacity: 0.9;
-    }
+
+      .footerLogo {
+        display: inline-grid;
+        position: relative;
+        margin: 0 0.33rem;
+        height: 1.75rem;
+        transform: translateY(-1.55rem);
+        -webkit-transform: translateY(-1.55rem);
+        -moz-transform: translateY(-1.55rem);
+        -o-transform: translateY(-1.55rem);
+        opacity: 0.9;
+      }
 
 /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
-@media only screen and (max-height: 668px) {
+@media only screen and (max-height: 737px) {
+  .contentContainer {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .contentTitle {
+    display: none;
+  }
   .box {
     height: 5.5rem;
     transform: translateY(-1rem);
@@ -185,7 +192,6 @@ li.links a {
   .icons {
     height: 3rem;
   }
-
   .polar {
     transform: translateY(13rem);
     -webkit-transform: translateY(13rem);
@@ -220,12 +226,45 @@ li.links a {
   }
 }
 
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+  .contentContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    transform: translate(-2rem, -2rem);
+    padding-top: 0.5rem;
+  }
+
+  .contentTitle {
+    transform: translate(-4rem, -2rem);
+    display: none;
+  }
+  .box {
+    height: 5.1rem;
+    width: 6.75rem;
+    margin-bottom: -1.25rem;
+  }
+  .icons {
+    height: 3rem;
+  }
+
+  .polar {
+    transform: translateY(3rem);
+  }
+
+  .footerLogo {
+    transform: translateY(2rem);
+    -webkit-transform: translateY(-2rem);
+    -moz-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+  }
+}
+
 /*
 ////////////////////////////////////////////////////////////////////////
 */
 
 /* Desktop and laptop stylesheet */
-@media (min-width: 1028px) {
+@media (min-width: 1080px) {
 
   li.links a {
     font-size: 1rem;
@@ -244,7 +283,7 @@ li.links a {
   }
   
   .bearLogo {
-    height: 6rem;
+    height: 7rem;
     margin: 0 7rem;
     user-select: none;
     cursor: grabbing;
@@ -259,18 +298,18 @@ li.links a {
   }
   
   .contentContainer {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(2rem, auto);
-    transform: translate(-10rem, -4rem);
-    -webkit-transform: translate(-10rem, -4rem);
-    -moz-transform: translate(-10rem, -4rem);
-    -o-transform: translate(-10rem, -4rem);
+    transform: translate(-10rem, -5rem);
+    -webkit-transform: translate(-10rem, -5rem);
+    -moz-transform: translate(-10rem, -5rem);
+    -o-transform: translate(-10rem, -5rem);
   }
   
     .contentTitle {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
+      display: grid;
+      font-size: 3rem;
+      line-height: 3rem;
       transform: translate(-10rem, -3rem);
       -webkit-transform: translate(-10rem, -3rem);
       -moz-transform: translate(-10rem, -3rem);
@@ -321,18 +360,11 @@ li.links a {
     
     .footerLogo {
       padding: 0 0.25rem;
-      transform:translate(-0.75rem, -0.5rem);
-      -webkit-transform: translate(-0.75rem, -0.5rem);
-      -moz-transform:translate(-0.75rem, -0.5rem);
-      -o-transform:translate(-0.75rem, -0.5rem);
-    }
-
-    .pageFooter {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 100px;
-      width: 100%;
-      overflow: hidden;
+      padding-top: 1%;
+      transform: translate(-0.75rem, 0rem);
+      -webkit-transform: translate(-0.75rem, 0rem);
+      -moz-transform: translate(-0.75rem, 0rem);
+      -o-transform: translate(-0.75rem, 0rem);
     }
 }
+

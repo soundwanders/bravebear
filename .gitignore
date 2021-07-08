@@ -11,7 +11,7 @@
 
 # production
 /build
-/.vscode
+bravebear/public/HTML Templates
 
 # misc
 .DS_Store
