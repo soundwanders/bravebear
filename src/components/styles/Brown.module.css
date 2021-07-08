@@ -257,10 +257,10 @@ li.links a {
     transform: translateY(3rem);
   }
   .footerLogo {
-    transform: translateY(2rem);
+    transform: translateY(-2rem);
     -webkit-transform: translateY(-2rem);
-    -moz-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
+    -moz-transform: translateY(-2rem);
+    -o-transform: translateY(-2rem);
   }
 }
 
