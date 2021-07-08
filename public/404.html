@@ -4,22 +4,15 @@
   <title>404 error</title>
   <meta name="viewport" content="width=device-width,initial-scale=0.86">
   <style>
-  body {
+  html, body {
+    height: 100%;
+    width: 100%;
     background-color: #64a6d3;
     color: #2E2F30;
     font-family: sans-serif;
     margin: 0;
     overflow: hidden;
     text-align: center;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 1%;
-    width: 100%;
-    text-align: center;
-    font-size: .6em;
-    color: #e3e3e3;
   }
 
   a {
@@ -33,18 +26,17 @@
   }
 
   .dialog {
-    float:right;
+    float: right;
     text-align: center;
     width: 90%;
     margin: 5% auto 0;
   }
 
   h1 { 
-    font-size: 5em;
+    font-size: 3rem;
     color: #fff;
     line-height: .7em;
   }
-
   p {
     font-size: 1.4em;
     color: #fff;
@@ -52,30 +44,37 @@
   }
   .milk {
     position: absolute;
-    float: left;
-    width: 75%;
+    left: 40px;
+    width: 70%;
     margin: 12% 0 0 5%;
 
   }
   @media only screen and (max-width: 767px) {
     .milk {
-      width: 40%;
-      margin: 5% 0 0 5%;
+      width: 80%;
+      margin: 0 auto;
     }
     .dialog {
-      float:none;
+      float: none;
       text-align: center;
-      width: 70%;
-      height: auto;
+      width: 90%;
+    }
+    a {
+      font-size: 1.5rem;
     }
   }
   
-  @media only screen and (max-width: 1040px) and (orientation: landscape) {
-    h1 {
-      font-size: 3em;
+  @media screen and (max-width: 1040px) and (orientation: landscape) {
+    h3 {
+      font-size: 1.5em;
+    }
+    .dialog {
+      margin-top: -3%;
     }
     .milk {
-      width: 15%;
+      width: 28%;
+      bottom: 3rem;
+      left: 33vmax;
     }
   }
   </style>
@@ -83,17 +82,18 @@
 
 <body>
   
-  <div className="wrapper">
-    <div className="dialog">
+  <div class="wrapper">
+    <div class="dialog">
       <h1>Oops!</h1>
       <p>
-        Unable to refresh unless you are on the Home page. 
-        Please follow the link below to return to Home.
+        Please follow the link below to return to Home page.
       </p>
     </div>
-    <img src="./milk.png" type="image/png" className="milk">
 
-    <h3><a href="https://bravebear.netlify.app/">BraveBear Home Page  &hookleftarrow;</a></h3>
+    <h3><a href="https://bravebear.netlify.app/">BraveBear Home  &hookleftarrow;</a></h3>
+    <img src="./milk.png" type="image/png" class="milk">
+  
   </div>
+
 </body>
 </html>
