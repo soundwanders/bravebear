@@ -1,20 +1,12 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
   word-wrap: none;
+  background-color: #fff;
 }
-  
+
 li.links {
   float: left;
 }
@@ -30,12 +22,14 @@ li.links a {
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
 }
 
 .wrapper {
   display: grid;
-  height: 99%;
-  width: 100%;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .gridContainer {
@@ -47,13 +41,12 @@ li.links a {
     'footer footer footer footer footer footer';
   grid-template-rows: 0.25fr 0.75fr 0.75fr 0.25fr;
   grid-gap: 0;
-  background-color: rgb(100, 149, 237);
-  height: 100%;
+  height: calc(100vh - 40px);
   width: auto;
+  background-color: #6699ff;
 }
 
   .gridContainer > div {
-    background-color: rgb(100, 149, 237);
     text-align: center;
     padding-bottom: 0;
   }
@@ -63,24 +56,28 @@ li.links a {
     /* item 3 min-width creates a buffer section for peeking bear to appear without affecting grid's format */
     /* removing min-width or setting to an insufficient value forces grid item 2's content to shift during animation */
     .item3 { grid-area: left; min-width: 2.5rem; }
-    .item4 { grid-area: footer; margin-bottom:1rem; }
-
-.bearLogo {
-  opacity: 0.9;
-  height: 4.5rem;
-  width: auto;
-  margin: 0 1.33rem;
-  padding-top: 0.25rem;
-}
+    .item4 { grid-area: footer; }
 
   .bunchabears {
-      background-color: peachpuff;
-      transform: translateY(-1rem);
-      padding: 1rem 0;
+    background-color: #ffdab9;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    padding: 1rem 0;
   }
-      
+
+    .bearLogo {
+      opacity: 0.9;
+      height: 4rem;
+      width: auto;
+      margin: 0 1.33rem;
+      padding-top: 0.25rem;
+      transform: translate(-1rem, 0);
+    }
+    
       #rb {
-        height: 4.75rem;
+        height: 4.25rem;
       }
 
 .contentContainer {
@@ -90,8 +87,10 @@ li.links a {
   grid-gap: 2rem;
   margin: 1rem 2rem;
   align-content: center;
-  justify-content: center;
-  transform: translate(-1.5rem, -1rem);
+  transform: translate(-1.5rem, -1.5rem);
+  -webkit-transform: translate(-1.5rem, -1.5rem);
+  -moz-transform: translate(-1.5rem, -1.5rem);
+  -o-transform: translate(-1.5rem, -1.5rem);
 }
 
   .contentTitle {
@@ -105,6 +104,9 @@ li.links a {
     -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
     transform: translate(-2rem, -1.5rem);
+    -webkit-transform: translate(-2rem, -1.5rem);
+    -o-transform: translate(-2rem, -1.5rem);
+    -moz-transform: translate(-2rem, -1.5rem);
   }
 
     .box {
@@ -122,52 +124,69 @@ li.links a {
       font-display: swap;
       text-align: center;
       margin: 0 auto;
+      margin-top: 0.5rem;
       font-family: monospace, mono, 'Roboto', Helvetica, sans-serif;
       user-select: none;
     }
 
-      .icons {
-        margin: 0 auto;
-        margin-bottom: 0.75rem;
-        height: 4rem;
-        width: auto;
+    .icons {
+      margin: 0 auto;
+      margin-bottom: 0.75rem;
+      height: 4rem;
+      width: auto;
+      opacity: 0.9;
+    }
+
+    .polar {
+      display: grid;
+      height: 5rem;
+      padding: 0;
+      margin: 0 auto;
+      transform: translateY(15rem);
+      -webkit-transform: translateY(15rem);
+      -moz-transform: translateY(15rem);
+      -o-transform: translateY(15rem);
+      animation: peekaboo 3000ms forwards ease-in;
+    }
+    
+      @keyframes peekaboo {
+        0% { margin-left: -5rem; }
+        100% { margin-left: -0.45rem; }
+      }
+
+      .footerLogo {
+        display: inline-grid;
+        position: relative;
+        margin: 0 0.33rem;
+        height: 1.75rem;
+        transform: translateY(-1.55rem);
+        -webkit-transform: translateY(-1.55rem);
+        -moz-transform: translateY(-1.55rem);
+        -o-transform: translateY(-1.55rem);
         opacity: 0.9;
       }
 
-.polar {
-  display: grid;
-  height: 5rem;
-  padding: 0;
-  margin: 0 auto;
-  transform: translateY(15rem);
-  animation: peekaboo 3000ms forwards ease-in;
-}
-
-  @keyframes peekaboo {
-    0% { margin-left: -5rem; }
-    100% { margin-left: -0.45rem; }
-  }
-
-.footerLogo {
-  display: inline-grid;
-  position: relative;
-  margin: 0 0.33rem;
-  height: 1.75rem;
-  transform: translateY(-1.5rem);
-  opacity: 0.9;
-}
-
 /* Smaller devices, such as the Note 3 and iPhone 6/7/8 */
-@media only screen and (max-height: 668px) {
+@media only screen and (max-height: 737px) {
   .contentContainer {
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .contentTitle {
+    display: none;
   }
   .box {
     height: 5.5rem;
     transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
   }
   .footerLogo {
     transform: translateY(-2.5rem);
+    -webkit-transform: translateY(-2.5rem);
+    -moz-transform: translateY(-2.5rem);
+    -o-transform: translateY(-2.5rem);
     height: 1.25rem;
   }
   .icons {
@@ -176,13 +195,19 @@ li.links a {
 
   .polar {
     transform: translateY(13rem);
+    -webkit-transform: translateY(13rem);
+    -moz-transform: translateY(13rem);
+    -o-transform: translateY(13rem);
   }
 }
 
 /* Larger phones, like the iPhone XR/XS */
-@media only screen and (min-height: 896px) {
+@media (min-height: 896px) {
   .contentTitle {
     transform: translate(-2rem, -1rem);
+    -webkit-transform: translate(-2rem, -1rem);
+    -moz-transform: translate(-2rem, -1rem);
+    -o-transform: translate(-2rem, -1rem);
   }
   .box {
     margin: 1rem auto;
@@ -196,52 +221,111 @@ li.links a {
   }
   .polar {
     transform: translateY(20rem);
+    -webkit-transform: translateY(20rem);
+    -moz-transform: translateY(20);
+    -o-transform: translateY(20rem);
   }
 }
 
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+  .bunchabears {
+    height: 3rem;
+  }
+  .bearLogo {
+    height: 3.5rem;
+  }
+  .contentContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    transform: translate(-2rem, -2rem);
+    padding-top: 0.5rem;
+  }
+  .contentTitle {
+    transform: translate(-4rem, -2rem);
+    display: none;
+  }
+  .box {
+    height: 5rem;
+    width: 7.5  rem;
+    margin-bottom: -1.25rem;
+    font-size: 0.65rem;
+    line-height: 0.65rem;
+  }
+  .icons {
+    height: 3rem;
+  }
+  .polar {
+    transform: translateY(3rem);
+  }
+  .footerLogo {
+    transform: translateY(2rem);
+    -webkit-transform: translateY(-2rem);
+    -moz-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+  }
+}
+
+
 /*
-//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 */
 
 /* Desktop and laptop stylesheet */
-@media (min-width: 1028px) {
+@media (min-width: 1080px) {
 
   li.links a {
     font-size: 1rem;
     margin-left: 1rem;
   }
 
+  li.links:hover {
+    transform:scaleX(1);
+  }
+
   .item3 { grid-area: left; min-width: 6rem; }
   .item4 { grid-area: footer; margin-bottom:1rem; }
 
   .bunchabears {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
   
   .bearLogo {
     height: 7rem;
     margin: 0 7rem;
+    user-select: none;
+    cursor: grabbing;
+  }
+
+  .bearLogo:hover {
+    opacity: 0.8;
   }
   
   #rb {
-    height: 7.25rem;
+    height: 6.25rem;
   }
   
   .contentContainer {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(5rem, auto);
-    transform: translate(-10rem, -4rem);
+    grid-auto-rows: minmax(2rem, auto);
+    transform: translate(-10rem, -5rem);
+    -webkit-transform: translate(-10rem, -5rem);
+    -moz-transform: translate(-10rem, -5rem);
+    -o-transform: translate(-10rem, -5rem);
   }
   
     .contentTitle {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-      transform: translate(-10rem, -2rem);
+      display: grid;
+      font-size: 3rem;
+      line-height: 3rem;
+      transform: translate(-10rem, -3rem);
+      -webkit-transform: translate(-10rem, -3rem);
+      -moz-transform: translate(-10rem, -3rem);
+      -o-transform: translate(-10rem, -3rem);
+      user-select: none;
     }
   
       .box {
-        height: 11rem;
+        height: 10rem;
         width: 11rem;
         box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
         -o-box-shadow: 0 0.275rem rgba(100, 100, 100, 0.2);
@@ -250,24 +334,44 @@ li.links a {
         font-size: 1rem;
         line-height: 1rem;
       }
+
+      .box:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transition-duration: 200ms;
+        -webkit-transition-duration: 200ms;
+        -moz-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+        background-color: #ffdab9;
+      }
   
         .icons {
-          height: 6.5rem;
+          height: 6rem;
         }
   
   .polar {
     height: 10rem;
     transform: translateY(13rem);
+    -webkit-transform: translateY(13rem);
+    -moz-transform: translateY(13rem);
+    -o-transform: translateY(13rem);
   }
   
     @keyframes peekaboo {
       0% { margin-left: -5.5rem; }
       100% { margin-left: -0.75rem; }
     }
-  
-  .footerLogo {
-    padding: 0 0.25rem;
-    transform:translate(-0.75rem, -2rem);
-    margin-bottom: 0;
-  }
+    
+    .footerLogo {
+      padding: 0 0.25rem;
+      padding-top: 1%;
+      transform: translate(-0.75rem, 0rem);
+      -webkit-transform: translate(-0.75rem, 0rem);
+      -moz-transform: translate(-0.75rem, 0rem);
+      -o-transform: translate(-0.75rem, 0rem);
+    }
 }
+

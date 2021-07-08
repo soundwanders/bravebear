@@ -228,6 +228,12 @@ li.links a {
 }
 
 @media screen and (max-width: 1050px) and (orientation: landscape) {
+  .bunchabears {
+    height: 3rem;
+  }
+  .bearLogo {
+    height: 3.5rem;
+  }
   .contentContainer {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(10px, auto);
@@ -239,9 +245,11 @@ li.links a {
     display: none;
   }
   .box {
-    height: 5.1rem;
-    width: 6.75rem;
-    margin-bottom: -1.25rem; 
+    height: 5rem;
+    width: 7.5  rem;
+    margin-bottom: -1.25rem;
+    font-size: 0.65rem;
+    line-height: 0.65rem;
   }
   .icons {
     height: 3rem;
@@ -256,6 +264,7 @@ li.links a {
     -o-transform: translateY(2rem);
   }
 }
+
 
 /*
 ////////////////////////////////////////////////////////////////////////
