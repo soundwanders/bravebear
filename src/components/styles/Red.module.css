@@ -112,7 +112,7 @@ li.links a {
     .box {
       display: grid;
       background-color: #fff;
-      height: 7rem;
+      height: 6.6rem;
       width: 7.25rem;
       border: 0.125rem solid #fff;
       box-shadow: 0 0.1875rem rgba(100, 100, 100, 0.2);
@@ -159,10 +159,10 @@ li.links a {
         position: relative;
         margin: 0 0.33rem;
         height: 1.75rem;
-        transform: translateY(-1.55rem);
-        -webkit-transform: translateY(-1.55rem);
-        -moz-transform: translateY(-1.55rem);
-        -o-transform: translateY(-1.55rem);
+        transform: translateY(-1.6rem);
+        -webkit-transform: translateY(-1.6rem);
+        -moz-transform: translateY(-1.6rem);
+        -o-transform: translateY(-1.6rem);
         opacity: 0.9;
       }
 
@@ -226,6 +226,7 @@ li.links a {
   }
 }
 
+/* Landscape orientation mobile devices */
 @media only screen and (max-width: 1050px) and (orientation: landscape) {
   .bunchabears {
     height: 3rem;

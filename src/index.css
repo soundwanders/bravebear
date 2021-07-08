@@ -35,6 +35,10 @@ code {
   padding: 0;
   margin: 0 auto;
   margin-top: 1.5rem;
+  width: 100%;
+  background-color: cornflowerblue;
+  padding: 1.5rem 0;
+  margin-top: -0.5rem;
 }
 
 .bear {
@@ -45,7 +49,7 @@ code {
 }
 
 .threeBears {
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 button {
@@ -102,6 +106,23 @@ li.links a {
     height: 12rem;
   }
 }
+
+/* Landscape orientation mobile devices */
+@media only screen and (max-width: 1050px) and (orientation: landscape) {
+  button {
+    display: inline-table;
+    margin: 1rem 2rem;
+  }
+  .brave {
+    text-decoration: double;
+    text-decoration-color: black;
+  }
+  .bear {
+    height: 13vmax;
+    margin: 0 auto;
+  }
+}
+
 
 /* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
