@@ -43,7 +43,7 @@ li.links a {
   grid-gap: 0;
   height: calc(100vh - 40px);
   width: auto;
-  background-color: salmon;
+  background-color: #ff8c69;
 }
 
   .gridContainer > div {
@@ -160,7 +160,7 @@ li.links a {
         position: relative;
         margin: 0 0.33rem;
         height: 1.75rem;
-        bottom: 1rem;
+        bottom: 2rem;
         opacity: 0.9;
       }
 
@@ -219,6 +219,7 @@ li.links a {
     -o-transform: translateY(-1rem);
   }
   .footerLogo {
+    display: inline-grid;
     bottom: 2rem;
     height: 1.5rem;
   }
@@ -288,15 +289,6 @@ li.links a {
   }
   .polar {
     transform: translateY(1rem);
-  }
-  .footerLogo {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-    bottom: 1rem;
-    margin-bottom: 2%;
-    height: 1rem;
   }
 }
 
@@ -402,6 +394,7 @@ li.links a {
     }
     
     .footerLogo {
+      display: inline-grid;
       padding: 0 0.25rem;
       padding-top: 1%;
       transform: translate(-0.75rem, 0rem);
