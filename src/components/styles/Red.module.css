@@ -133,7 +133,7 @@ li.links a {
     .icons {
       margin: 0 auto;
       margin-bottom: 0.75rem;
-      height: 4rem;
+      height: 3.75rem;
       width: auto;
       opacity: 0.9;
     }
@@ -160,7 +160,7 @@ li.links a {
         position: relative;
         margin: 0 0.33rem;
         height: 1.75rem;
-        bottom: 2rem;
+        bottom: 2.5rem;
         opacity: 0.9;
       }
 
@@ -192,6 +192,7 @@ li.links a {
   }
   .footerLogo {
     height: 1.25rem;
+    bottom: 10px;
   }
 }
 
@@ -218,11 +219,6 @@ li.links a {
     -moz-transform: translateY(-1rem);
     -o-transform: translateY(-1rem);
   }
-  .footerLogo {
-    display: inline-grid;
-    bottom: 2rem;
-    height: 1.5rem;
-  }
   .icons {
     height: 3.75rem;
   }
@@ -231,6 +227,11 @@ li.links a {
     -webkit-transform: translateY(13rem);
     -moz-transform: translateY(13rem);
     -o-transform: translateY(13rem);
+  }
+  .footerLogo {
+    display: inline-grid;
+    bottom: 2rem;
+    height: 1.5rem;
   }
 }
 
@@ -247,14 +248,15 @@ li.links a {
   .box {
     margin: 1rem auto;
   }
-  .footerLogo {
-    margin-top: 1rem;
-  }
   .polar {
     transform: translateY(20rem);
     -webkit-transform: translateY(20rem);
     -moz-transform: translateY(20);
     -o-transform: translateY(20rem);
+  }
+  .footerLogo {
+    margin-top: 1rem;
+    bottom: 10px;
   }
 }
 
@@ -401,5 +403,6 @@ li.links a {
       -webkit-transform: translate(-0.75rem, 0rem);
       -moz-transform: translate(-0.75rem, 0rem);
       -o-transform: translate(-0.75rem, 0rem);
+      bottom: 10px;
     }
 }
