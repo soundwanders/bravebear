@@ -41,7 +41,6 @@ class App extends React.Component {
             </nav>
           </header>
 
-          <body>
             <div className="App">
               <p className="brave">
                 Brave Bear
@@ -61,7 +60,6 @@ class App extends React.Component {
                 </button>
               </div>
             </div>
-          </body>
         </main>
       </Router>
     )

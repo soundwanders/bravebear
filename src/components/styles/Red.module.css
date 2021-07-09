@@ -156,17 +156,16 @@ li.links a {
       }
 
       .footerLogo {
-        display: inline-grid;
-        position: relative;
+        display: inline-block;
         margin: 0 0.33rem;
         height: 1.75rem;
-        bottom: 2.5rem;
+        bottom: 2rem;
         opacity: 0.9;
       }
 
 
 /* XSmall devices like iPhone 5 */
-@media only screen and (min-width: 320px) and (max-height: 569px) {
+@media only screen and (min-width: 300px) and (max-width: 340px) and (max-height: 569px) {
   .bearLogo {
     transform: translateX(0);
   }
@@ -174,6 +173,7 @@ li.links a {
     font-size: 0.6rem;
   }
   .contentTitle {
+    display: grid;
     font-size: 0.75rem;
     transform: translate(-1.5rem, -1.5rem);
   }
@@ -210,8 +210,9 @@ li.links a {
     padding-bottom: 2rem;
   }
   .contentTitle {
-    display: none;
+    display: grid;
   }
+  
   .box {
     height: 6rem;
     transform: translateY(-1rem);
@@ -229,7 +230,7 @@ li.links a {
     -o-transform: translateY(13rem);
   }
   .footerLogo {
-    display: inline-grid;
+    display: inline-block;
     bottom: 2rem;
     height: 1.5rem;
   }
@@ -238,6 +239,7 @@ li.links a {
 /* Larger phones, like the iPhone XR/XS */
 @media only screen and (min-height: 896px) and (max-width: 900px) {
   .contentTitle {
+    display: grid;
     font-size: 1.675rem;
     margin-bottom: 1.675rem;
     transform: translate(-2rem, -1rem);
@@ -396,7 +398,7 @@ li.links a {
     }
     
     .footerLogo {
-      display: inline-grid;
+      display: inline-block;
       padding: 0 0.25rem;
       padding-top: 1%;
       transform: translate(-0.75rem, 0rem);
