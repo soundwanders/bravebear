@@ -11,7 +11,7 @@
 - React-router used to switch between page templates.
 - 'Switch' method used to ensure only one component is rendered and visible at any given time.
 - Navigate between the 3 Brave Bear templates by clicking on the bear logos or the navigation bar links.
-- Mobile-first design with media queries that cast a wide net to capture a wide range of devices.
+- Mobile-first design that scales up to desktop, with media queries to capture a wide range of devices.
 - Page layout built using CSS grid, where the app's main content is an inline grid.
 - Hosted on Netlify: https://bravebear.netlify.app/
 
