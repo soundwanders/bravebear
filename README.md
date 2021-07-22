@@ -1,7 +1,7 @@
 ## BraveBear React App
 <p align="center">
 
-<img src="https://github.com/soundwanders/bravebear/blob/render-test/public/smallBlueBear.png?raw=true" alt="Brave Blue Bear"/>
+<img src="https://github.com/soundwanders/bravebear/blob/main/public/smallBlueBear.png?raw=true" alt="Brave Blue Bear"/>
 
 </p>
 
