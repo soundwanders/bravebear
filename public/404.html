@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>404 error</title>
+  <title>404 Error</title>
   <meta name="viewport" content="width=device-width,initial-scale=0.86">
   <style>
   html, body {
@@ -12,13 +12,22 @@
     font-family: sans-serif;
     margin: 0;
     overflow: hidden;
-    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
   }
 
   a {
     color: #fff;
     font-size: 2rem;
     text-decoration: none;
+    text-align: center;
   }
 
   a:hover {
@@ -26,29 +35,38 @@
   }
 
   .dialog {
-    float: right;
+    display: inline-block;
     text-align: center;
-    width: 90%;
-    margin: 5% auto 0;
+    width: 100%;
+    margin: 1% auto;
   }
 
   h1 { 
     font-size: 3rem;
     color: #fff;
-    line-height: .7em;
+    line-height: 2rem;
   }
+
   p {
     font-size: 1.4em;
     color: #fff;
-    padding-right: 5%;
   }
-  .milk {
-    position: absolute;
-    left: 40px;
-    width: 70%;
-    margin: 12% 0 0 5%;
 
+  .milk {
+    position: fixed;
+    bottom: 0;
+    left: 35vmax;
+    width: 30%;
+    margin: 10% auto;
   }
+
+  .return {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    margin: 0 auto;
+  }
+
   @media only screen and (max-width: 767px) {
     .milk {
       width: 80%;
@@ -65,8 +83,8 @@
   }
   
   @media screen and (max-width: 1040px) and (orientation: landscape) {
-    h3 {
-      font-size: 1.5em;
+    a {
+      font-size: 1.5rem;
     }
     .dialog {
       margin-top: -3%;
@@ -91,9 +109,12 @@
       </p>
     </div>
 
-    <h3><a href="https://bravebear.netlify.app/">BraveBear Home  &hookleftarrow;</a></h3>
     <img src="./milk.png" type="image/png" class="milk">
-  
+
+    <div class="return">
+      <a href="https://bravebear.netlify.app/">BraveBear Home  &hookleftarrow;</a>
+    </div>
+
   </div>
 
 </body>
