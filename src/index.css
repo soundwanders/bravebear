@@ -28,6 +28,10 @@ code {
   margin-top: 2rem;
 }
 
+#navbar {
+   box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+
 .brave {
   font-size: 3rem;
   font-family: monospace;
@@ -135,7 +139,6 @@ li.links a {
 
 /* Desktop and laptop stylesheet */
 @media (min-width: 1028px) {
-
   .brave {
     font-size: 10rem;
     font-weight: bold;
