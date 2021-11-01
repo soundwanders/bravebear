@@ -58,9 +58,9 @@ class RedBearTemplate extends React.Component {
             <div className={styles.gridContainer}>
               <div className={styles.item1}>
                 <p className={styles.bunchabears}>
-                  <img onClick={() => this.nextPath("/bluebear")} className={styles.bearLogo} src={ BlueBearImage} alt="A Brave Blue Bear"/>
                   <img onClick={() => this.nextPath("/brownbear")} className={styles.bearLogo} src={ BrownBearImage } alt="A Brave Brown Bear"/>
                   <img onClick={() => this.nextPath("/redbear")} className={styles.bearLogo} id="rb" src={ RedBearImage } alt="A Brave Red Bear"/>
+                  <img onClick={() => this.nextPath("/bluebear")} className={styles.bearLogo} src={ BlueBearImage} alt="A Brave Blue Bear"/>
                 </p>
               </div>
 
